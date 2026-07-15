@@ -4259,90 +4259,164 @@ footer {
     background:#f5f5f5;
 
 }
-/* ==========================================
-   MOBILE RESPONSIVE
-========================================== */
+/* =====================================
+   MOBILE
+===================================== */
+
 @media (max-width:768px){
 
-    html,
-    body{
-        width:100%;
-        overflow-x:hidden;
-    }
-
-    *{
-        box-sizing:border-box;
-    }
-
-    .container{
-        width:100%;
-        max-width:100%;
-        padding:0 20px;
-    }
-
-    /* HERO */
-
-    .hero{
-        min-height:90vh;
-        padding:150px 0 80px;
-        text-align:center;
-    }
-
-    .hero-content{
-        width:100%;
-        max-width:100%;
-        margin:0 auto;
-    }
-
-    .hero-content h1{
-        font-size:42px;
-        line-height:1.2;
-        word-break:break-word;
-    }
-
-    .hero-content p{
-        font-size:17px;
-        line-height:1.8;
-    }
-
-    .hero-buttons{
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:15px;
-    }
-
-    /* Semua grid menjadi 1 kolom */
-
-    .history-grid,
-    .hadroh-grid,
-    .visi-grid,
-    .misi-grid,
-    .program-grid,
-    .fasilitas-grid,
-    .guru-grid,
-    .gallery-grid,
-    .counter-grid,
-    .pengurus-grid,
-    .event-grid,
-    .maps-grid,
-    .kontak-grid,
-    .social-grid{
-        grid-template-columns:1fr !important;
-    }
-
-    img{
-        max-width:100%;
-        height:auto;
-        display:block;
-    }
-
-    iframe{
-        width:100%;
-        height:300px;
-    }
-
+.container{
+    width:100%;
+    padding:0 20px;
 }
 
+body{
+    overflow-x:hidden;
+}
+
+img{
+    width:100%;
+    height:auto;
+}
+
+/* HEADER */
+
+#header{
+    position:fixed;
+    width:100%;
+}
+
+#header .container{
+    height:70px;
+    padding:0 15px;
+}
+
+.logo{
+    gap:10px;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+}
+
+.logo h2{
+    font-size:18px;
+    line-height:1.2;
+}
+
+.logo span{
+    display:none;
+}
+
+/* NAVBAR */
+
+nav ul{
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav ul li a{
+    font-size:14px;
+}
+
+/* BUTTON */
+
+.btn{
+    padding:10px 22px;
+    font-size:15px;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    margin-bottom:35px;
+}
+
+.section-title h5{
+    font-size:15px;
+}
+
+.section-title h2{
+    font-size:28px;
+    line-height:1.3;
+}
+
+.section-title p{
+    font-size:15px;
+    width:100%;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    height:auto;
+    padding:120px 20px 70px;
+}
+
+.hero-content{
+    width:100%;
+    max-width:100%;
+}
+
+.hero-content h1{
+    font-size:34px;
+    line-height:1.3;
+    white-space:normal;
+}
+
+.hero-content h1 span{
+    display:block;
+}
+
+.hero-content p{
+    font-size:16px;
+    line-height:1.8;
+    white-space:normal;
+    margin-top:20px;
+    padding:0 10px;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+    padding:60px 0;
+}
+
+.info-bar{
+    grid-template-columns:1fr;
+    gap:20px;
+    padding:25px;
+}
+
+.info-item i{
+    font-size:28px;
+}
+
+.info-item h2{
+    font-size:26px;
+}
+
+.prayer-card{
+    padding:25px;
+}
+
+.prayer-card h3{
+    font-size:22px;
+}
+
+.prayer-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.prayer-grid strong{
+    font-size:20px;
+}
+
+}
 
 /* =====================================
    JAVASCRIPT EFFECT
