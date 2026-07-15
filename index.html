@@ -51,45 +51,42 @@
     </div>
 
     <!-- ========================= -->
-    <!-- HEADER -->
-    <!-- ========================= -->
+<!-- HEADER -->
+<!-- ========================= -->
 
-    <header id="header">
-      <div class="container">
-        <a href="index.html" class="logo">
-          <img src="images/logo.png" />
+<header id="header">
+  <div class="container">
 
-          <div>
-            <h2>ASSUNNIYYAH</h2>
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Logo">
 
-            <span>SULAWESI TENGGARA</span>
-          </div>
-        </a>
-
-        <nav id="navbar">
-          <ul>
-            <li><a href="index.html" class="active">Beranda</a></li>
-
-            <li><a href="profil.html">Profil</a></li>
-
-            <li><a href="pengasuh.html">Pengasuh</a></li>
-
-            <li><a href="guru.html">Guru TPQ</a></li>
-
-            <li><a href="hadroh.html">Hadroh</a></li>
-
-            <li><a href="pengurus.html">Pengurus</a></li>
-
-            <li><a href="kegiatan.html">Kegiatan</a></li>
-
-            <li><a href="galeri.html">Galeri</a></li>
-
-            <li><a href="kontak.html">Kontak</a></li>
-          </ul>
-        </nav>
+      <div class="logo-text">
+        <h2>ASSUNNIYYAH</h2>
+        <span>SULAWESI TENGGARA</span>
       </div>
-    </header>
+    </a>
 
+    <!-- Tombol Menu Mobile -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="pengasuh.html">Pengasuh</a></li>
+        <li><a href="guru.html">Guru TPQ</a></li>
+        <li><a href="hadroh.html">Hadroh</a></li>
+        <li><a href="pengurus.html">Pengurus</a></li>
+        <li><a href="kegiatan.html">Kegiatan</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
     <!-- ========================= -->
     <!-- HERO -->
     <!-- ========================= -->
@@ -629,5 +626,14 @@
     <script src="js/kalender.js"></script>
     <script src="js/jadwal-sholat.js"></script>
     <script src="js/galeri.js"></script>
+
+    <script>
+const menu = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+menu.onclick = function(){
+    navbar.classList.toggle("active");
+}
+</script>
   </body>
 </html>
