@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kalender Islami | Assunniyyah Sultra</title>
+
+<link rel="icon" href="images/favicon.ico">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- HEADER -->
+
+
+<header id="header">
+
+
+<div class="container">
+
+
+<a href="index.html" class="logo">
+
+
+<img src="images/logo.png">
+
+
+<div>
+
+<h2>
+ASSUNNIYYAH
+</h2>
+
+<span>
+SULAWESI TENGGARA
+</span>
+
+</div>
+
+
+</a>
+
+
+
+
+<nav>
+
+
+<ul>
+
+
+<li>
+
+<a href="index.html">
+Beranda
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="profil.html">
+Profil
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="kegiatan.html">
+Kegiatan
+</a>
+
+</li>
+
+
+
+<li>
+
+<a class="active" href="kalender.html">
+Kalender
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="kontak.html">
+Kontak
+</a>
+
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+<!-- BANNER -->
+
+
+<section class="page-banner">
+
+
+<div class="overlay"></div>
+
+
+<div class="container">
+
+
+<h1>
+Kalender Islami
+</h1>
+
+
+<p>
+Beranda / Kalender
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- JAM DIGITAL -->
+
+
+<section class="clock-section">
+
+
+<div class="container">
+
+
+<div class="clock-box">
+
+
+<i class="fa-solid fa-clock"></i>
+
+
+<h2 id="clock">
+
+00:00:00
+
+</h2>
+
+
+<p>
+Waktu Indonesia
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- KALENDER -->
+
+
+<section class="calendar-section">
+
+
+<div class="container">
+
+
+<div class="calendar-grid">
+
+
+
+
+
+<!-- MASEHI -->
+
+
+<div class="calendar-card">
+
+
+<i class="fa-solid fa-calendar-days"></i>
+
+
+<h2>
+Kalender Masehi
+</h2>
+
+
+<h3 id="masehi">
+
+-
+
+</h3>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- HIJRIYAH -->
+
+
+<div class="calendar-card">
+
+
+<i class="fa-solid fa-moon"></i>
+
+
+<h2>
+Kalender Hijriyah
+</h2>
+
+
+<h3 id="hijriyah">
+
+-
+
+</h3>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- INFO HARI -->
+
+
+<section class="today">
+
+
+<div class="container">
+
+
+<div class="today-box">
+
+
+<h2 id="day">
+
+-
+
+</h2>
+
+
+<p>
+
+Semoga hari ini menjadi hari yang penuh berkah.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+<!-- ================= WAKTU SHOLAT ================= -->
+
+
+<section class="sholat-section">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<h5>
+Ibadah
+</h5>
+
+
+<h2>
+Jadwal Waktu Sholat
+</h2>
+
+
+<p id="lokasi">
+
+Mengambil lokasi...
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="sholat-grid">
+
+
+
+<div class="sholat-card">
+
+<i class="fa-solid fa-moon"></i>
+
+<h3>
+Imsak
+</h3>
+
+<p id="imsak">
+--
+</p>
+
+</div>
+
+
+
+
+
+<div class="sholat-card">
+
+<i class="fa-solid fa-star-and-crescent"></i>
+
+<h3>
+Subuh
+</h3>
+
+<p id="subuh">
+--
+</p>
+
+</div>
+
+
+
+
+
+<div class="sholat-card">
+
+<i class="fa-solid fa-sun"></i>
+
+<h3>
+Dzuhur
+</h3>
+
+<p id="dzuhur">
+--
+</p>
+
+</div>
+
+
+
+
+
+<div class="sholat-card">
+
+<i class="fa-solid fa-cloud-sun"></i>
+
+<h3>
+Ashar
+</h3>
+
+<p id="ashar">
+--
+</p>
+
+</div>
+
+
+
+
+
+<div class="sholat-card">
+
+<i class="fa-solid fa-cloud-moon"></i>
+
+<h3>
+Maghrib
+</h3>
+
+<p id="maghrib">
+--
+</p>
+
+</div>
+
+
+
+
+
+<div class="sholat-card">
+
+<i class="fa-solid fa-moon"></i>
+
+<h3>
+Isya
+</h3>
+
+<p id="isya">
+--
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+<div class="container footer-grid">
+
+
+<div>
+
+<h2>
+Assunniyyah Sultra
+</h2>
+
+
+<p>
+
+TPQ & Hadroh Assunniyyah Sultra
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div>
+
+<h3>
+Menu
+</h3>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+Beranda
+</a>
+</li>
+
+
+<li>
+<a href="profil.html">
+Profil
+</a>
+</li>
+
+
+<li>
+<a href="kegiatan.html">
+Kegiatan
+</a>
+</li>
+
+
+<li>
+<a href="kontak.html">
+Kontak
+</a>
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div>
+
+<h3>
+Media Sosial
+</h3>
+
+
+<div class="social">
+
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-facebook"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-tiktok"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="copyright">
+
+<p>
+
+© 2026 TPQ & Hadroh Assunniyyah Sultra
+
+</p>
+
+</div>
+
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+
+<script>
+
+
+// JAM DIGITAL
+
+
+function updateClock(){
+
+
+let now = new Date();
+
+
+let jam = now.getHours();
+
+let menit = now.getMinutes();
+
+let detik = now.getSeconds();
+
+
+
+jam = jam < 10 ? "0"+jam : jam;
+
+menit = menit < 10 ? "0"+menit : menit;
+
+detik = detik < 10 ? "0"+detik : detik;
+
+
+
+document.getElementById("clock").innerHTML =
+jam+":"+menit+":"+detik;
+
+
+}
+
+
+
+setInterval(updateClock,1000);
+
+updateClock();
+
+
+
+
+
+
+// KALENDER MASEHI
+
+
+let today = new Date();
+
+
+
+let masehi = today.toLocaleDateString(
+"id-ID",
+{
+weekday:"long",
+day:"numeric",
+month:"long",
+year:"numeric"
+}
+);
+
+
+
+document.getElementById("masehi").innerHTML = masehi;
+
+
+
+
+
+
+// KALENDER HIJRIYAH
+
+
+let hijri = today.toLocaleDateString(
+"id-ID-u-ca-islamic",
+{
+weekday:"long",
+day:"numeric",
+month:"long",
+year:"numeric"
+}
+);
+
+
+
+document.getElementById("hijriyah").innerHTML = hijri;
+
+
+
+
+
+
+// HARI
+
+
+document.getElementById("day").innerHTML =
+today.toLocaleDateString(
+"id-ID",
+{
+weekday:"long"
+}
+);
+
+
+</script>
+
+
+
+</body>
+
+</html>

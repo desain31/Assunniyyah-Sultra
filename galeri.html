@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Galeri | Assunniyyah Sultra</title>
+
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header id="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" />
+
+          <div>
+            <h2>ASSUNNIYYAH</h2>
+
+            <span>SULAWESI TENGGARA</span>
+          </div>
+        </a>
+
+        <nav id="navbar">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+
+            <li><a href="profil.html">Profil</a></li>
+
+            <li><a href="pengasuh.html">Pengasuh</a></li>
+
+            <li><a href="guru.html">Guru TPQ</a></li>
+
+            <li><a href="hadroh.html">Hadroh</a></li>
+
+            <li><a href="pengurus.html">Pengurus</a></li>
+
+            <li><a href="kegiatan.html">Kegiatan</a></li>
+
+            <li><a href="galeri.html" class="active">Galeri</a></li>
+
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+
+   <!-- ================= INTRO GALERI ================= -->
+
+<section class="gallery-introduction">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>Dokumentasi</h5>
+
+            <h2>Foto Kegiatan Assunniyyah Sultra</h2>
+
+            <p>
+                Kumpulan dokumentasi kegiatan TPQ, Hadroh, Guru, Pengurus,
+                serta berbagai kegiatan keagamaan yang menjadi bagian dari
+                perjalanan TPQ & Hadroh Assunniyyah Sultra.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= FILTER GALERI ================= -->
+
+<section class="photo-filter">
+
+    <div class="container">
+
+        <div class="photo-filter-buttons">
+
+            <button class="active" data-filter="all">Semua</button>
+
+            <button data-filter="tpq">TPQ</button>
+
+            <button data-filter="hadroh">Hadroh</button>
+
+            <button data-filter="guru">Guru</button>
+
+            <button data-filter="acara">Acara</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= GALERI ================= -->
+
+<section class="photo-gallery">
+
+    <div class="container">
+
+        <div class="photo-gallery-grid" id="photoGallery">
+
+            <div class="photo-gallery-card tpq">
+
+                <img src="images/galeri/tpq1.jpg" alt="">
+
+                <div class="photo-gallery-overlay">
+
+                    <h3>Kegiatan TPQ</h3>
+
+                </div>
+
+            </div>
+
+            <div class="photo-gallery-card tpq">
+
+                <img src="images/galeri/tpq2.jpg" alt="">
+
+                <div class="photo-gallery-overlay">
+
+                    <h3>Pembelajaran Santri</h3>
+
+                </div>
+
+            </div>
+
+            <div class="photo-gallery-card hadroh">
+
+                <img src="images/galeri/hadroh1.jpg" alt="">
+
+                <div class="photo-gallery-overlay">
+
+                    <h3>Latihan Hadroh</h3>
+
+                </div>
+
+            </div>
+
+            <div class="photo-gallery-card hadroh">
+
+                <img src="images/galeri/hadroh2.jpg" alt="">
+
+                <div class="photo-gallery-overlay">
+
+                    <h3>Penampilan Hadroh</h3>
+
+                </div>
+
+            </div>
+
+            <div class="photo-gallery-card guru">
+
+                <img src="images/galeri/guru1.jpg" alt="">
+
+                <div class="photo-gallery-overlay">
+
+                    <h3>Kegiatan Guru</h3>
+
+                </div>
+
+            </div>
+
+            <div class="photo-gallery-card acara">
+
+                <img src="images/galeri/acara1.jpg" alt="">
+
+                <div class="photo-gallery-overlay">
+
+                    <h3>Acara Keagamaan</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    
+    
+
+    <script src="js/script.js"></script>
+
+    <script>
+      // FILTER GALERI
+
+      const buttons = document.querySelectorAll(".filter-buttons button");
+
+      const items = document.querySelectorAll(".gallery-item");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          buttons.forEach((btn) => {
+            btn.classList.remove("active");
+          });
+
+          button.classList.add("active");
+
+          let filter = button.dataset.filter;
+
+          items.forEach((item) => {
+            if (filter == "all" || item.classList.contains(filter)) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+
+      // LIGHTBOX
+
+      const images = document.querySelectorAll(".gallery-item img");
+
+      const lightbox = document.getElementById("lightbox");
+
+      const lightboxImg = document.getElementById("lightbox-img");
+
+      const close = document.querySelector(".close");
+
+      images.forEach((image) => {
+        image.onclick = () => {
+          lightbox.style.display = "flex";
+
+          lightboxImg.src = image.src;
+        };
+      });
+
+      close.onclick = () => {
+        lightbox.style.display = "none";
+      };
+
+      lightbox.onclick = (e) => {
+        if (e.target == lightbox) {
+          lightbox.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
