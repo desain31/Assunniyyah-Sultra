@@ -4260,9 +4260,13 @@ footer {
 
 }
 
-/* =====================================
-   MOBILE
-===================================== */
+/* ===============================
+   MOBILE NAVBAR
+================================= */
+
+.menu-toggle{
+    display:none;
+}
 
 .menu-toggle{
     display:none;
@@ -4270,86 +4274,27 @@ footer {
 
 @media (max-width:768px){
 
-/* CONTAINER */
-
-.container{
-    width:100%;
-    padding:0 20px;
-}
-
-body{
-    overflow-x:hidden;
-}
-
-img{
-    max-width:100%;
-    height:auto;
-}
-
-/* HEADER */
-
-#header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:999;
-}
-
-#header .container{
-    height:70px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:relative;
-}
-
-/* LOGO */
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.logo img{
-    width:45px;
-    height:45px;
-}
-
-.logo h2{
-    font-size:17px;
-    line-height:1.2;
-}
-
-.logo span{
-    font-size:10px;
-    letter-spacing:1px;
-}
-
-/* MENU HAMBURGER */
-
 .menu-toggle{
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
     width:42px;
     height:42px;
     font-size:28px;
-    color:var(--hijau-tua);
+    color:#2e7d32;
     cursor:pointer;
+    z-index:1001;
 }
 
-/* NAVBAR */
-
 #navbar{
-    display:none;
     position:absolute;
     top:70px;
     left:0;
     width:100%;
     background:#fff;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+    display:none;
 }
 
 #navbar.active{
@@ -4359,6 +4304,7 @@ img{
 #navbar ul{
     display:flex;
     flex-direction:column;
+    width:100%;
 }
 
 #navbar ul li{
@@ -4367,102 +4313,8 @@ img{
 
 #navbar ul li a{
     display:block;
-    padding:15px 20px;
+    padding:16px 20px;
     border-bottom:1px solid #eee;
-    font-size:15px;
-}
-
-/* BUTTON */
-
-.btn{
-    padding:10px 22px;
-    font-size:15px;
-}
-
-/* SECTION TITLE */
-
-.section-title{
-    margin-bottom:35px;
-}
-
-.section-title h5{
-    font-size:15px;
-}
-
-.section-title h2{
-    font-size:28px;
-    line-height:1.3;
-}
-
-.section-title p{
-    font-size:15px;
-    max-width:100%;
-}
-
-/* HERO */
-
-.hero{
-    min-height:100vh;
-    height:auto;
-    padding:120px 20px 70px;
-}
-
-.hero-content{
-    width:100%;
-}
-
-.hero-content h1{
-    font-size:34px;
-    line-height:1.3;
-    white-space:normal;
-}
-
-.hero-content h1 span{
-    display:block;
-}
-
-.hero-content p{
-    font-size:16px;
-    line-height:1.8;
-    white-space:normal;
-    margin-top:18px;
-}
-
-/* DASHBOARD */
-
-.dashboard{
-    padding:60px 0;
-}
-
-.info-bar{
-    grid-template-columns:1fr;
-    gap:20px;
-    padding:25px;
-}
-
-.info-item i{
-    font-size:28px;
-}
-
-.info-item h2{
-    font-size:24px;
-}
-
-.prayer-card{
-    padding:25px;
-}
-
-.prayer-card h3{
-    font-size:22px;
-}
-
-.prayer-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
-}
-
-.prayer-grid strong{
-    font-size:20px;
 }
 
 }
