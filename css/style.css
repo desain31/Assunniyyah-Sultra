@@ -4259,53 +4259,87 @@ footer {
     background:#f5f5f5;
 
 }
-/* ===========================
-   RESPONSIVE MOBILE
-=========================== */
-
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
 @media (max-width:768px){
 
-.container{
-    width:92%;
-    margin:auto;
-}
+    html,
+    body{
+        width:100%;
+        overflow-x:hidden;
+    }
 
-.hero-grid,
-.history-grid,
-.visi-grid,
-.program-grid,
-.misi-grid,
-.tujuan-grid,
-.guru-grid,
-.gallery-grid,
-.maps-grid,
-.footer-grid,
-.hadroh-grid,
-.kegiatan-grid,
-.event-grid,
-.counter-grid,
-.kontak-grid,
-.pengurus-grid{
-    grid-template-columns:1fr !important;
-}
+    *{
+        box-sizing:border-box;
+    }
 
-img{
-    max-width:100%;
-    height:auto;
-}
+    .container{
+        width:100%;
+        max-width:100%;
+        padding:0 20px;
+    }
 
-iframe{
-    width:100%;
-}
+    /* HERO */
 
-.section-title h2{
-    font-size:28px;
-}
+    .hero{
+        min-height:90vh;
+        padding:150px 0 80px;
+        text-align:center;
+    }
 
-.btn{
-    width:100%;
-    text-align:center;
-}
+    .hero-content{
+        width:100%;
+        max-width:100%;
+        margin:0 auto;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+        line-height:1.2;
+        word-break:break-word;
+    }
+
+    .hero-content p{
+        font-size:17px;
+        line-height:1.8;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    /* Semua grid menjadi 1 kolom */
+
+    .history-grid,
+    .hadroh-grid,
+    .visi-grid,
+    .misi-grid,
+    .program-grid,
+    .fasilitas-grid,
+    .guru-grid,
+    .gallery-grid,
+    .counter-grid,
+    .pengurus-grid,
+    .event-grid,
+    .maps-grid,
+    .kontak-grid,
+    .social-grid{
+        grid-template-columns:1fr !important;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+        display:block;
+    }
+
+    iframe{
+        width:100%;
+        height:300px;
+    }
 
 }
 
