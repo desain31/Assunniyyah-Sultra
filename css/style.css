@@ -4259,473 +4259,53 @@ footer {
     background:#f5f5f5;
 
 }
-@media (max-width: 768px) {
-
-/* =====================================
-   Sosial media home
-===================================== */
-
-  .social-media-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-        gap:15px;
-
-    }
-
-    .social-media-card{
-
-        padding:30px 15px;
-
-    }
-
-    .social-media-card i{
-
-        font-size:40px;
-
-    }
-
-    .social-media-card h3{
-
-        font-size:16px;
-
-    }
-  /* =====================================
-   pengasuh
-===================================== */
-
-  .pengasuh-grid {
-    grid-template-columns: 1fr;
-
-    gap: 40px;
-
-    text-align: center;
-  }
-
-  .info-pengasuh {
-    grid-template-columns: 1fr;
-  }
-
-  .social {
-    justify-content: center;
-  }
-
-  .isi h2 {
-    font-size: 30px;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-item img {
-    height: 240px;
-  }
-
-  .guru-stat-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .guru-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hadroh-jadwal-table{
-
-        min-width:650px;
-
-    }
-
-    .anggota-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .pengurus-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .prestasi-timeline::before{
-
-        display:none;
-
-    }
-
-    .prestasi-item{
-
-        flex-direction:column;
-
-        align-items:center;
-
-        text-align:center;
-
-    }
-
-    .prestasi-card{
-
-        width:100%;
-
-    }
-
-    .hadroh-gallery-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .hadroh-gallery-item img{
-
-        height:230px;
-
-    }
-
-    .hadroh-video-box iframe{
-
-        height:250px;
-
-    }
-
-    .hadroh-booking-box{
-
-        padding:40px 25px;
-
-    }
-
-    .hadroh-booking-box h2{
-
-        font-size:28px;
-
-    }
-
-    .hadroh-booking-box p{
-
-        font-size:15px;
-
-    }
-
-    .tpq-management-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .tpq-management-card{
-
-        flex-direction:column;
-
-        text-align:center;
-
-        padding:30px 20px;
-
-    }
-
-    .tpq-management-card img{
-
-        width:130px;
-
-        height:130px;
-
-    }
-
-    .tpq-management-info h3{
-
-        font-size:20px;
-
-    }
-
-    .hadroh-management-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .management-division-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .management-division-card{
-
-        padding:35px 25px;
-
-    }
-
-    .management-period-box{
-
-        padding:40px 20px;
-
-    }
-
-    .management-period-box h2{
-
-        font-size:28px;
-
-    }
-
-    .management-period-box p{
-
-        font-size:20px;
-
-    }
-
-    .agenda-table th{
-
-        font-size:15px;
-
-        padding:15px;
-
-    }
-
-    .agenda-table td{
-
-        font-size:14px;
-
-        padding:15px 10px;
-
-    }
-
-    .annual-events-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .annual-events-card img{
-
-        height:220px;
-
-    }
-
-    .annual-events-content{
-
-        padding:20px;
-
-    }
-
-    .annual-events-content h3{
-
-        font-size:20px;
-
-    }
-
-    .latest-announcement-card{
-
-        flex-direction:column;
-
-        text-align:center;
-
-        padding:30px 20px;
-
-    }
-
-    .announcement-icon{
-
-        width:70px;
-
-        height:70px;
-
-    }
-
-    .announcement-icon i{
-
-        font-size:28px;
-
-    }
-
-    .announcement-content h3{
-
-        font-size:20px;
-
-    }
-
-    .activity-gallery{
-
-        padding:80px 0;
-
-    }
-
-    .activity-gallery-grid{
-
-        grid-template-columns:1fr;
-
-        gap:20px;
-
-    }
-
-    .activity-gallery-item img{
-
-        height:220px;
-
-    }
-
-    .gallery-introduction{
-
-        padding:80px 0;
-
-    }
-
-    .gallery-introduction h2{
-
-        font-size:30px;
-
-    }
-
-    .gallery-introduction p{
-
-        font-size:15px;
-
-        line-height:1.8;
-
-    }
-
-    .photo-gallery-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .photo-gallery-card img{
-
-        height:240px;
-
-    }
-
-    .photo-filter-buttons{
-
-        gap:10px;
-
-    }
-
-    .photo-filter-buttons button{
-
-        font-size:14px;
-
-        padding:10px 18px;
-
-    }
-
-    .contact-information{
-
-        padding:80px 0;
-
-    }
-
-    .contact-information-grid{
-
-        grid-template-columns:1fr;
-
-        gap:20px;
-
-    }
-
-    .contact-information-card{
-
-        padding:30px 20px;
-
-    }
-
-    .contact-information-card i{
-
-        width:65px;
-
-        height:65px;
-
-        line-height:65px;
-
-        font-size:26px;
-
-    }
-
-    .contact-social{
-
-        padding:80px 0;
-
-    }
-
-    .contact-form-section{
-
-        padding:80px 0;
-
-    }
-
-    .contact-social-grid{
-
-        grid-template-columns:1fr;
-
-        gap:20px;
-
-    }
-
-    .contact-social-card{
-
-        padding:30px 20px;
-
-    }
-
-    .contact-social-card i{
-
-        width:60px;
-
-        height:60px;
-
-        line-height:60px;
-
-        font-size:24px;
-
-    }
-
-    .contact-input input,
-
-    .contact-input textarea{
-
-        padding:16px 18px;
-
-    }
-
-    .contact-button{
-
-        padding:16px;
-
-    }
-
-    .contact-location{
-
-        padding:80px 0;
-
-    }
-
-    .contact-location-map iframe{
-
-        height:320px;
-
-    }
-
-    .contact-whatsapp{
-
-        padding:80px 0;
-
-    }
-
-    .contact-whatsapp-card{
-
-        flex-direction:column;
-
-        text-align:center;
-
-        padding:35px 25px;
-
-    }
-
-    .contact-whatsapp-content h2{
-
-        font-size:28px;
-
-    }
-
+/* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.container{
+    width:92%;
+    margin:auto;
+}
+
+.hero-grid,
+.history-grid,
+.visi-grid,
+.program-grid,
+.misi-grid,
+.tujuan-grid,
+.guru-grid,
+.gallery-grid,
+.maps-grid,
+.footer-grid,
+.hadroh-grid,
+.kegiatan-grid,
+.event-grid,
+.counter-grid,
+.kontak-grid,
+.pengurus-grid{
+    grid-template-columns:1fr !important;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+iframe{
+    width:100%;
+}
+
+.section-title h2{
+    font-size:28px;
+}
+
+.btn{
+    width:100%;
+    text-align:center;
+}
 
 }
 
