@@ -4104,7 +4104,7 @@ footer {
 ===================================== */
 
   .hero {
-    min-height: 100vh;
+    min-height: 55vh;
     padding: 90px 20px 40px;
     display: flex;
     align-items: flex-start;
@@ -4353,7 +4353,7 @@ footer {
   .guru-card {
     background: #fff;
     border-radius: 20px;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
@@ -4364,19 +4364,18 @@ footer {
   }
 
   .guru-card img {
-    width: 170px;
-    height: 170px;
+    width: 120px;
+    height: 150px;
     object-fit: cover;
     object-position: center;
     margin: 0 auto 15px;
     display: block;
-    border-radius: 50px;
+    border-radius: 15px;
   }
 
   .guru-card h3 {
-    font-size: 22px;
-    margin: 0;
-    line-height: 1.4;
+    font-size: 18px;
+    margin-top: 12px;
   }
 
   .center {
@@ -4745,6 +4744,104 @@ footer {
   .misi-card p {
     font-size: 15px;
     line-height: 1.8;
+  }
+
+  /* =====================================
+   MOBILE - TUJUAN
+===================================== */
+
+  .tujuan {
+    padding: 60px 0;
+  }
+
+  .tujuan-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 35px;
+  }
+
+  .tujuan-card {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .tujuan-card i {
+    font-size: 24px;
+  }
+
+  .tujuan-card span {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* =====================================
+   MOBILE - PROGRAM
+===================================== */
+
+  .program {
+    padding: 60px 0;
+  }
+
+  .program-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+  }
+
+  .program-card {
+    padding: 25px 18px;
+  }
+
+  .program-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .program-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .program-card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* =====================================
+   MOBILE - FASILITAS
+===================================== */
+
+  .fasilitas {
+    padding: 60px 0;
+  }
+
+  .fasilitas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+  }
+
+  .fasilitas-card {
+    padding: 25px 18px;
+  }
+
+  .fasilitas-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .fasilitas-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .fasilitas-card p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 }
 
