@@ -4659,17 +4659,14 @@ footer {
   /* Sejarah */
 
   .history {
-    padding: 50px 0;
+    padding-top: 140px;
   }
 
   .history-grid {
     grid-template-columns: 1fr;
     gap: 30px;
-
     padding: 25px 20px;
-
     margin-top: 30px;
-
     border-radius: 18px;
   }
 
@@ -5153,6 +5150,781 @@ footer {
     padding: 8px;
     font-size: 12px;
     border-radius: 12px;
+  }
+  /* =====================================
+   MOBILE - TENTANG HADROH
+===================================== */
+
+  .hadroh-about {
+    padding: 100px 0 60px;
+  }
+
+  .hadroh-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .hadroh-image {
+    text-align: center;
+  }
+
+  .hadroh-image img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hadroh-content {
+    text-align: center;
+  }
+
+  .hadroh-content h5 {
+    font-size: 16px;
+  }
+
+  .hadroh-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .hadroh-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+  }
+
+  .hadroh-content ul {
+    margin: 20px 0;
+  }
+
+  .hadroh-content ul li {
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  /* =====================================
+   MOBILE - JADWAL HADROH
+===================================== */
+
+  .hadroh-jadwal {
+    padding: 60px 0;
+  }
+
+  .hadroh-jadwal-box {
+    margin-top: 35px;
+    overflow-x: auto;
+    border-radius: 15px;
+  }
+
+  .hadroh-jadwal-table {
+    min-width: 650px;
+  }
+
+  .hadroh-jadwal-table th,
+  .hadroh-jadwal-table td {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  /* =====================================
+   MOBILE - ANGGOTA HADROH
+===================================== */
+
+  .anggota-hadroh {
+    padding: 60px 0;
+  }
+
+  .anggota-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+  }
+
+  .anggota-card {
+    padding: 20px 15px;
+    border-radius: 18px;
+  }
+
+  .anggota-card img {
+    width: 100px;
+    height: 100px;
+    border-width: 3px;
+    margin-bottom: 15px;
+  }
+
+  .anggota-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  .anggota-card .jabatan {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .status {
+    top: 10px;
+    right: 10px;
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  /* =====================================
+   MOBILE - PENGURUS HADROH
+===================================== */
+
+  .pengurus-hadroh {
+    padding: 60px 0;
+  }
+
+  .pengurus-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+  }
+
+  .pengurus-card {
+    padding: 25px 15px;
+    border-radius: 18px;
+  }
+
+  .pengurus-card .icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .pengurus-card .icon i {
+    font-size: 24px;
+  }
+
+  .pengurus-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .pengurus-card span {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* =====================================
+   MOBILE - PERJALANAN HADROH
+===================================== */
+
+  .prestasi-hadroh {
+    padding: 60px 0;
+  }
+
+  .prestasi-timeline {
+    margin-top: 35px;
+  }
+
+  .prestasi-timeline::before {
+    left: 20px;
+    width: 3px;
+  }
+
+  .prestasi-item {
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+
+  .prestasi-tahun {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  .prestasi-card {
+    padding: 18px;
+    border-radius: 15px;
+  }
+
+  .prestasi-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .prestasi-card p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* =====================================
+   MOBILE - GALERI HADROH
+===================================== */
+
+  .hadroh-gallery {
+    padding: 60px 0;
+  }
+
+  .hadroh-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 35px;
+  }
+
+  .hadroh-gallery-item {
+    border-radius: 15px;
+  }
+
+  .hadroh-gallery-item img {
+    height: 160px;
+  }
+
+  /* =====================================
+   MOBILE - BOOKING HADROH
+===================================== */
+
+  .hadroh-booking {
+    padding: 60px 0;
+  }
+
+  .hadroh-booking-box {
+    padding: 35px 20px;
+    border-radius: 18px;
+  }
+
+  .hadroh-booking-box i {
+    font-size: 45px;
+    margin-bottom: 18px;
+  }
+
+  .hadroh-booking-box h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .hadroh-booking-box p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
+
+  .hadroh-booking-box .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+
+  /* ================================
+     PENGURUS TPQ
+  ================================= */
+
+  .tpq-management {
+    padding: 65px 0;
+  }
+
+  .tpq-management-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 35px;
+  }
+
+  .tpq-management-card {
+    gap: 18px;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .tpq-management-card img {
+    width: 85px;
+    height: 85px;
+    border-width: 3px;
+  }
+
+  .tpq-management-info h3 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+
+  .tpq-management-info p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* ================================
+     PENGURUS HADROH
+  ================================= */
+
+  .hadroh-management {
+    padding: 65px 0;
+  }
+
+  .hadroh-management-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 35px;
+  }
+
+  .hadroh-management-card {
+    padding: 25px 15px;
+    border-radius: 16px;
+    border-top-width: 4px;
+  }
+
+  .hadroh-management-icon {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 15px;
+  }
+
+  .hadroh-management-icon i {
+    font-size: 26px;
+  }
+
+  .hadroh-management-card h3 {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .hadroh-management-card p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* ================================
+     BIDANG KEPENGURUSAN
+  ================================= */
+
+  .management-division {
+    padding: 65px 0;
+  }
+
+  .management-division-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 35px;
+  }
+
+  .management-division-card {
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+
+  .management-division-card i {
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+
+  .management-division-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .management-division-card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ================================
+     PERIODE PENGURUS
+  ================================= */
+
+  .management-period {
+    padding: 65px 0;
+  }
+
+  .management-period-box {
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+
+  .management-period-box h2 {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+
+  .management-period-box p {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+  /* =================================
+     AGENDA RUTIN
+  ================================= */
+
+  .agenda-rutin {
+    padding: 65px 0;
+  }
+
+  .agenda-table-wrapper {
+    margin-top: 35px;
+    border-radius: 15px;
+    overflow-x: auto;
+  }
+
+  .agenda-table {
+    min-width: 600px;
+  }
+
+  .agenda-table th {
+    padding: 15px 12px;
+    font-size: 15px;
+  }
+
+  .agenda-table td {
+    padding: 14px 12px;
+    font-size: 14px;
+  }
+
+  /* =================================
+     EVENT TAHUNAN
+  ================================= */
+
+  .annual-events {
+    padding: 65px 0;
+  }
+
+  .annual-events-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 35px;
+  }
+
+  .annual-events-card {
+    border-radius: 16px;
+  }
+
+  .annual-events-card img {
+    height: 220px;
+  }
+
+  .annual-events-content {
+    padding: 20px;
+  }
+
+  .annual-events-content h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .annual-events-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* =================================
+     PENGUMUMAN TERBARU
+  ================================= */
+
+  .latest-announcement {
+    padding: 65px 0;
+  }
+
+  .latest-announcement-list {
+    gap: 18px;
+    margin-top: 35px;
+  }
+
+  .latest-announcement-card {
+    gap: 15px;
+    padding: 20px;
+    border-radius: 16px;
+    align-items: flex-start;
+  }
+
+  .announcement-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .announcement-icon i {
+    font-size: 22px;
+  }
+
+  .announcement-content h3 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 7px;
+  }
+
+  .announcement-content p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* =================================
+     GALERI KEGIATAN
+  ================================= */
+
+  .activity-gallery {
+    padding: 65px 0;
+  }
+
+  .activity-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 35px;
+  }
+
+  .activity-gallery-item {
+    border-radius: 12px;
+  }
+
+  .activity-gallery-item img {
+    height: 160px;
+  }
+
+  /* =================================
+     INTRO GALERI
+  ================================= */
+
+  .gallery-introduction {
+    padding: 65px 0;
+  }
+
+  .gallery-introduction .section-title {
+    width: 100%;
+  }
+
+  .gallery-introduction h5 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+  }
+
+  .gallery-introduction h2 {
+    font-size: 28px;
+    line-height: 1.35;
+    margin-bottom: 15px;
+  }
+
+  .gallery-introduction p {
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 0 10px;
+  }
+
+  /* =================================
+     FILTER GALERI
+  ================================= */
+
+  .photo-filter {
+    padding: 25px 0;
+  }
+
+  .photo-filter-buttons {
+    gap: 8px;
+    padding: 0 10px;
+  }
+
+  .photo-filter-buttons button {
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+
+  /* =================================
+     GALERI
+  ================================= */
+
+  .photo-gallery {
+    padding: 50px 0 65px;
+  }
+
+  .photo-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .photo-gallery-card {
+    border-radius: 12px;
+  }
+
+  .photo-gallery-card img {
+    height: 160px;
+  }
+
+  .photo-gallery-overlay {
+    padding: 12px;
+  }
+
+  .photo-gallery-overlay h3 {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  /*=====================================
+        INFORMASI KONTAK
+  ======================================*/
+
+  .contact-information {
+    padding: 60px 0;
+  }
+
+  .contact-information-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 35px;
+  }
+
+  .contact-information-card {
+    padding: 25px 12px;
+    border-radius: 15px;
+  }
+
+  .contact-information-card i {
+    width: 58px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 23px;
+    margin-bottom: 12px;
+  }
+
+  .contact-information-card h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+
+  .contact-information-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+
+  /*=====================================
+        MEDIA SOSIAL KONTAK
+  ======================================*/
+
+  .contact-social {
+    padding: 60px 0;
+  }
+
+  .contact-social-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 35px;
+  }
+
+  .contact-social-card {
+    padding: 25px 12px;
+    border-radius: 15px;
+  }
+
+  .contact-social-card i {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 23px;
+    margin-bottom: 12px;
+  }
+
+  .contact-social-card h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+
+  .contact-social-card span {
+    font-size: 12px;
+    word-break: break-word;
+  }
+
+  /*=====================================
+        FORM KONTAK
+  ======================================*/
+
+  .contact-form-section {
+    padding: 60px 0;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .contact-input {
+    margin-bottom: 18px;
+  }
+
+  .contact-input input,
+  .contact-input textarea {
+    padding: 14px 16px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+
+  .contact-input textarea {
+    min-height: 140px;
+  }
+
+  .contact-button {
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 12px;
+  }
+
+  /*=====================================
+        LOKASI
+  ======================================*/
+
+  .contact-location {
+    padding: 60px 0;
+  }
+
+  .contact-location-map {
+    margin-top: 35px;
+    border-radius: 15px;
+  }
+
+  .contact-location-map iframe {
+    height: 350px;
+  }
+
+  /*=====================================
+        WHATSAPP
+  ======================================*/
+
+  .contact-whatsapp {
+    padding: 60px 0;
+  }
+
+  .contact-whatsapp-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .contact-whatsapp-icon {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+  }
+
+  .contact-whatsapp-icon i {
+    font-size: 35px;
+  }
+
+  .contact-whatsapp-content h2 {
+    font-size: 24px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+  }
+
+  .contact-whatsapp-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .contact-whatsapp-button {
+    width: 100%;
+  }
+
+  .contact-whatsapp-button a {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 14px;
   }
 }
 
