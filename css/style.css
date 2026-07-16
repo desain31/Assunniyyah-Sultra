@@ -3,15 +3,15 @@
    MAIN STYLE CSS
 ===================================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
-body{
-    overflow-x:hidden;
+body {
+  overflow-x: hidden;
 }
 
 /* RESET */
@@ -513,7 +513,7 @@ nav ul li a.active {
    STATISTIK
 ===================================== */
 
-.counter{
+.counter {
   padding: 100px 0;
   background: linear-gradient(135deg, #f7fff8, #eef8ef);
 }
@@ -988,70 +988,58 @@ nav ul li a.active {
       MEDIA SOSIAL HOME
 ======================================*/
 
-.social-media-home{
+.social-media-home {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.social-media-grid{
+.social-media-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(4, 1fr);
 
-    grid-template-columns:repeat(4,1fr);
+  gap: 25px;
 
-    gap:25px;
-
-    margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.social-media-card{
+.social-media-card {
+  background: #fff;
 
-    background:#fff;
+  padding: 40px 25px;
 
-    padding:40px 25px;
+  border-radius: 20px;
 
-    border-radius:20px;
+  text-align: center;
 
-    text-align:center;
+  text-decoration: none;
 
-    text-decoration:none;
+  color: #222;
 
-    color:#222;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-    transition:.3s;
-
+  transition: 0.3s;
 }
 
-.social-media-card:hover{
+.social-media-card:hover {
+  transform: translateY(-8px);
 
-    transform:translateY(-8px);
-
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.social-media-card i{
+.social-media-card i {
+  font-size: 55px;
 
-    font-size:55px;
+  color: #2e7d32;
 
-    color:#2e7d32;
-
-    margin-bottom:20px;
-
+  margin-bottom: 20px;
 }
 
-.social-media-card h3{
+.social-media-card h3 {
+  font-size: 20px;
 
-    font-size:20px;
-
-    font-weight:600;
-
+  font-weight: 600;
 }
 
 /* =====================================
@@ -2230,698 +2218,584 @@ footer {
       TENTANG HADROH
 ==============================*/
 
-.hadroh-about{
+.hadroh-about {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.hadroh-grid{
+.hadroh-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: 1fr 1fr;
 
-    grid-template-columns:1fr 1fr;
+  gap: 70px;
 
-    gap:70px;
-
-    align-items:center;
-
+  align-items: center;
 }
 
-.hadroh-image img{
+.hadroh-image img {
+  width: 100%;
 
-    width:100%;
+  border-radius: 20px;
 
-    border-radius:20px;
+  display: block;
 
-    display:block;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.hadroh-content h5{
+.hadroh-content h5 {
+  color: #2e7d32;
 
-    color:#2e7d32;
+  font-size: 18px;
 
-    font-size:18px;
-
-    margin-bottom:10px;
-
+  margin-bottom: 10px;
 }
 
-.hadroh-content h2{
+.hadroh-content h2 {
+  font-size: 40px;
 
-    font-size:40px;
+  color: #184d2d;
 
-    color:#184d2d;
-
-    margin-bottom:20px;
-
+  margin-bottom: 20px;
 }
 
-.hadroh-content p{
+.hadroh-content p {
+  line-height: 1.9;
 
-    line-height:1.9;
+  color: #555;
 
-    color:#555;
-
-    margin-bottom:20px;
-
+  margin-bottom: 20px;
 }
 
-.hadroh-content ul{
+.hadroh-content ul {
+  list-style: none;
 
-    list-style:none;
+  padding: 0;
 
-    padding:0;
-
-    margin:30px 0;
-
+  margin: 30px 0;
 }
 
-.hadroh-content ul li{
+.hadroh-content ul li {
+  position: relative;
 
-    position:relative;
+  padding-left: 35px;
 
-    padding-left:35px;
+  margin-bottom: 18px;
 
-    margin-bottom:18px;
-
-    font-size:17px;
-
+  font-size: 17px;
 }
 
-.hadroh-content ul li::before{
+.hadroh-content ul li::before {
+  content: "✓";
 
-    content:"✓";
+  position: absolute;
 
-    position:absolute;
+  left: 0;
 
-    left:0;
+  width: 24px;
 
-    width:24px;
+  height: 24px;
 
-    height:24px;
+  border-radius: 50%;
 
-    border-radius:50%;
+  background: #2e7d32;
 
-    background:#2e7d32;
+  color: #fff;
 
-    color:#fff;
+  text-align: center;
 
-    text-align:center;
+  line-height: 24px;
 
-    line-height:24px;
-
-    font-size:14px;
-
+  font-size: 14px;
 }
 
 /*=====================================
       JADWAL HADROH
 ======================================*/
 
-.hadroh-jadwal{
+.hadroh-jadwal {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#ffffff;
-
+  background: #ffffff;
 }
 
-.hadroh-jadwal-box{
+.hadroh-jadwal-box {
+  margin-top: 50px;
 
-    margin-top:50px;
+  overflow-x: auto;
 
-    overflow-x:auto;
+  border-radius: 20px;
 
-    border-radius:20px;
-
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
-
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
 }
 
-.hadroh-jadwal-table{
+.hadroh-jadwal-table {
+  width: 100%;
 
-    width:100%;
+  border-collapse: collapse;
 
-    border-collapse:collapse;
-
-    background:#fff;
-
+  background: #fff;
 }
 
-.hadroh-jadwal-table thead{
+.hadroh-jadwal-table thead {
+  background: #2e7d32;
 
-    background:#2e7d32;
-
-    color:#fff;
-
+  color: #fff;
 }
 
-.hadroh-jadwal-table th{
+.hadroh-jadwal-table th {
+  padding: 20px;
 
-    padding:20px;
+  text-align: center;
 
-    text-align:center;
+  font-size: 17px;
 
-    font-size:17px;
-
-    font-weight:600;
-
+  font-weight: 600;
 }
 
-.hadroh-jadwal-table th i{
-
-    margin-right:8px;
-
+.hadroh-jadwal-table th i {
+  margin-right: 8px;
 }
 
-.hadroh-jadwal-table td{
+.hadroh-jadwal-table td {
+  padding: 20px;
 
-    padding:20px;
+  text-align: center;
 
-    text-align:center;
+  color: #555;
 
-    color:#555;
-
-    border-bottom:1px solid #eee;
-
+  border-bottom: 1px solid #eee;
 }
 
-.hadroh-jadwal-table tbody tr{
-
-    transition:.3s;
-
+.hadroh-jadwal-table tbody tr {
+  transition: 0.3s;
 }
 
-.hadroh-jadwal-table tbody tr:hover{
-
-    background:#f3fbf3;
-
+.hadroh-jadwal-table tbody tr:hover {
+  background: #f3fbf3;
 }
 
-.hadroh-jadwal-table tbody tr:last-child td{
-
-    border-bottom:none;
-
+.hadroh-jadwal-table tbody tr:last-child td {
+  border-bottom: none;
 }
 
 /*=====================================
       ANGGOTA HADROH
 ======================================*/
 
-.anggota-hadroh{
+.anggota-hadroh {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.anggota-grid{
+.anggota-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(3, 1fr);
 
-    grid-template-columns:repeat(3,1fr);
+  gap: 35px;
 
-    gap:35px;
-
-    margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.anggota-card{
+.anggota-card {
+  position: relative;
 
-    position:relative;
+  background: #fff;
 
-    background:#fff;
+  border-radius: 20px;
 
-    border-radius:20px;
+  padding: 35px 25px;
 
-    padding:35px 25px;
+  text-align: center;
 
-    text-align:center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    transition:.35s;
-
+  transition: 0.35s;
 }
 
-.anggota-card:hover{
+.anggota-card:hover {
+  transform: translateY(-10px);
 
-    transform:translateY(-10px);
-
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
-
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.anggota-card img{
+.anggota-card img {
+  width: 160px;
 
-    width:160px;
+  height: 160px;
 
-    height:160px;
+  object-fit: cover;
 
-    object-fit:cover;
+  border-radius: 50%;
 
-    border-radius:50%;
+  border: 5px solid #2e7d32;
 
-    border:5px solid #2e7d32;
-
-    margin-bottom:20px;
-
+  margin-bottom: 20px;
 }
 
-.anggota-card h3{
+.anggota-card h3 {
+  font-size: 24px;
 
-    font-size:24px;
+  color: #184d2d;
 
-    color:#184d2d;
-
-    margin-bottom:10px;
-
+  margin-bottom: 10px;
 }
 
-.anggota-card .jabatan{
+.anggota-card .jabatan {
+  display: inline-block;
 
-    display:inline-block;
+  background: #e8f5e9;
 
-    background:#e8f5e9;
+  color: #2e7d32;
 
-    color:#2e7d32;
+  padding: 8px 20px;
 
-    padding:8px 20px;
+  border-radius: 30px;
 
-    border-radius:30px;
+  font-size: 15px;
 
-    font-size:15px;
-
-    font-weight:600;
-
+  font-weight: 600;
 }
 
-.status{
+.status {
+  position: absolute;
 
-    position:absolute;
+  top: 20px;
 
-    top:20px;
+  right: 20px;
 
-    right:20px;
+  background: #2e7d32;
 
-    background:#2e7d32;
+  color: #fff;
 
-    color:#fff;
+  font-size: 13px;
 
-    font-size:13px;
+  font-weight: 600;
 
-    font-weight:600;
+  padding: 6px 14px;
 
-    padding:6px 14px;
-
-    border-radius:20px;
-
+  border-radius: 20px;
 }
 
 /*=====================================
       PENGURUS HADROH
 ======================================*/
 
-.pengurus-hadroh{
+.pengurus-hadroh {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#ffffff;
-
+  background: #ffffff;
 }
 
-.pengurus-grid{
+.pengurus-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(4, 1fr);
 
-    grid-template-columns:repeat(4,1fr);
+  gap: 30px;
 
-    gap:30px;
-
-    margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.pengurus-card{
+.pengurus-card {
+  background: #fff;
 
-    background:#fff;
+  border-radius: 20px;
 
-    border-radius:20px;
+  padding: 40px 25px;
 
-    padding:40px 25px;
+  text-align: center;
 
-    text-align:center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+  transition: 0.35s;
 
-    transition:.35s;
-
-    border-top:5px solid #2e7d32;
-
+  border-top: 5px solid #2e7d32;
 }
 
-.pengurus-card:hover{
+.pengurus-card:hover {
+  transform: translateY(-10px);
 
-    transform:translateY(-10px);
-
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
-
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
-.pengurus-card .icon{
+.pengurus-card .icon {
+  width: 85px;
 
-    width:85px;
+  height: 85px;
 
-    height:85px;
+  margin: 0 auto 20px;
 
-    margin:0 auto 20px;
+  background: #e8f5e9;
 
-    background:#e8f5e9;
+  border-radius: 50%;
 
-    border-radius:50%;
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
-
-    align-items:center;
-
+  align-items: center;
 }
 
-.pengurus-card .icon i{
+.pengurus-card .icon i {
+  font-size: 34px;
 
-    font-size:34px;
-
-    color:#2e7d32;
-
+  color: #2e7d32;
 }
 
-.pengurus-card h3{
+.pengurus-card h3 {
+  color: #184d2d;
 
-    color:#184d2d;
+  font-size: 24px;
 
-    font-size:24px;
-
-    margin-bottom:12px;
-
+  margin-bottom: 12px;
 }
 
-.pengurus-card span{
+.pengurus-card span {
+  display: block;
 
-    display:block;
+  color: #666;
 
-    color:#666;
+  line-height: 1.8;
 
-    line-height:1.8;
-
-    font-size:15px;
-
+  font-size: 15px;
 }
 
 /*=====================================
       PERJALANAN HADROH
 ======================================*/
 
-.prestasi-hadroh{
+.prestasi-hadroh {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.prestasi-timeline{
+.prestasi-timeline {
+  position: relative;
 
-    position:relative;
+  max-width: 900px;
 
-    max-width:900px;
-
-    margin:60px auto 0;
-
+  margin: 60px auto 0;
 }
 
-.prestasi-timeline::before{
+.prestasi-timeline::before {
+  content: "";
 
-    content:"";
+  position: absolute;
 
-    position:absolute;
+  left: 120px;
 
-    left:120px;
+  top: 0;
 
-    top:0;
+  width: 4px;
 
-    width:4px;
+  height: 100%;
 
-    height:100%;
+  background: #2e7d32;
 
-    background:#2e7d32;
-
-    border-radius:20px;
-
+  border-radius: 20px;
 }
 
-.prestasi-item{
+.prestasi-item {
+  display: flex;
 
-    display:flex;
+  align-items: flex-start;
 
-    align-items:flex-start;
+  gap: 40px;
 
-    gap:40px;
+  margin-bottom: 50px;
 
-    margin-bottom:50px;
-
-    position:relative;
-
+  position: relative;
 }
 
-.prestasi-tahun{
+.prestasi-tahun {
+  width: 90px;
 
-    width:90px;
+  height: 90px;
 
-    height:90px;
+  background: #2e7d32;
 
-    background:#2e7d32;
+  color: #fff;
 
-    color:#fff;
+  border-radius: 50%;
 
-    border-radius:50%;
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
+  align-items: center;
 
-    align-items:center;
+  font-size: 24px;
 
-    font-size:24px;
+  font-weight: bold;
 
-    font-weight:bold;
+  flex-shrink: 0;
 
-    flex-shrink:0;
-
-    z-index:2;
-
+  z-index: 2;
 }
 
-.prestasi-card{
+.prestasi-card {
+  flex: 1;
 
-    flex:1;
+  background: #fff;
 
-    background:#fff;
+  padding: 30px;
 
-    padding:30px;
+  border-radius: 20px;
 
-    border-radius:20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    transition:.3s;
-
+  transition: 0.3s;
 }
 
-.prestasi-card:hover{
+.prestasi-card:hover {
+  transform: translateY(-5px);
 
-    transform:translateY(-5px);
-
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
-
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
-.prestasi-card h3{
+.prestasi-card h3 {
+  color: #184d2d;
 
-    color:#184d2d;
+  margin-bottom: 15px;
 
-    margin-bottom:15px;
-
-    font-size:24px;
-
+  font-size: 24px;
 }
 
-.prestasi-card p{
+.prestasi-card p {
+  color: #555;
 
-    color:#555;
-
-    line-height:1.8;
-
+  line-height: 1.8;
 }
 
 /*=====================================
       GALERI HADROH
 ======================================*/
 
-.hadroh-gallery{
+.hadroh-gallery {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#ffffff;
-
+  background: #ffffff;
 }
 
-.hadroh-gallery-grid{
+.hadroh-gallery-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(3, 1fr);
 
-    grid-template-columns:repeat(3,1fr);
+  gap: 30px;
 
-    gap:30px;
-
-    margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.hadroh-gallery-item{
+.hadroh-gallery-item {
+  overflow: hidden;
 
-    overflow:hidden;
+  border-radius: 20px;
 
-    border-radius:20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
-    box-shadow:0 10px 30px rgba(0,0,0,.10);
-
-    cursor:pointer;
-
+  cursor: pointer;
 }
 
-.hadroh-gallery-item img{
+.hadroh-gallery-item img {
+  width: 100%;
 
-    width:100%;
+  height: 280px;
 
-    height:280px;
+  object-fit: cover;
 
-    object-fit:cover;
+  display: block;
 
-    display:block;
-
-    transition:.5s;
-
+  transition: 0.5s;
 }
 
-.hadroh-gallery-item:hover img{
-
-    transform:scale(1.08);
-
+.hadroh-gallery-item:hover img {
+  transform: scale(1.08);
 }
 
-.hadroh-gallery-item:hover{
-
-    box-shadow:0 18px 40px rgba(0,0,0,.18);
-
+.hadroh-gallery-item:hover {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 }
 
 /*=====================================
       BOOKING HADROH
 ======================================*/
 
-.hadroh-booking{
+.hadroh-booking {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#ffffff;
-
+  background: #ffffff;
 }
 
-.hadroh-booking-box{
+.hadroh-booking-box {
+  max-width: 900px;
 
-    max-width:900px;
+  margin: auto;
 
-    margin:auto;
+  text-align: center;
 
-    text-align:center;
+  padding: 60px;
 
-    padding:60px;
+  border-radius: 25px;
 
-    border-radius:25px;
+  background: linear-gradient(135deg, #2e7d32, #43a047);
 
-    background:linear-gradient(135deg,#2e7d32,#43a047);
+  color: #fff;
 
-    color:#fff;
-
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
-
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
 }
 
-.hadroh-booking-box i{
+.hadroh-booking-box i {
+  font-size: 65px;
 
-    font-size:65px;
-
-    margin-bottom:25px;
-
+  margin-bottom: 25px;
 }
 
-.hadroh-booking-box h2{
+.hadroh-booking-box h2 {
+  font-size: 38px;
 
-    font-size:38px;
-
-    margin-bottom:20px;
-
+  margin-bottom: 20px;
 }
 
-.hadroh-booking-box p{
+.hadroh-booking-box p {
+  line-height: 1.9;
 
-    line-height:1.9;
+  font-size: 17px;
 
-    font-size:17px;
-
-    margin-bottom:35px;
-
+  margin-bottom: 35px;
 }
 
-.hadroh-booking-box .btn{
+.hadroh-booking-box .btn {
+  display: inline-flex;
 
-    display:inline-flex;
+  align-items: center;
 
-    align-items:center;
+  gap: 10px;
 
-    gap:10px;
+  background: #fff;
 
-    background:#fff;
+  color: #2e7d32;
 
-    color:#2e7d32;
+  padding: 16px 38px;
 
-    padding:16px 38px;
+  border-radius: 40px;
 
-    border-radius:40px;
+  font-weight: 700;
 
-    font-weight:700;
+  text-decoration: none;
 
-    text-decoration:none;
-
-    transition:.3s;
-
+  transition: 0.3s;
 }
 
-.hadroh-booking-box .btn:hover{
+.hadroh-booking-box .btn:hover {
+  transform: translateY(-5px);
 
-    transform:translateY(-5px);
-
-    background:#f1f8f2;
-
+  background: #f1f8f2;
 }
 
 /* =====================================
@@ -2932,318 +2806,264 @@ footer {
         PENGURUS TPQ
 ======================================*/
 
-.tpq-management{
+.tpq-management {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.tpq-management-grid{
+.tpq-management-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(2, 1fr);
 
-    grid-template-columns:repeat(2,1fr);
+  gap: 35px;
 
-    gap:35px;
-
-    margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.tpq-management-card{
+.tpq-management-card {
+  display: flex;
 
-    display:flex;
+  align-items: center;
 
-    align-items:center;
+  gap: 25px;
 
-    gap:25px;
+  background: #fff;
 
-    background:#fff;
+  padding: 25px;
 
-    padding:25px;
+  border-radius: 20px;
 
-    border-radius:20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    transition:.35s;
-
+  transition: 0.35s;
 }
 
-.tpq-management-card:hover{
+.tpq-management-card:hover {
+  transform: translateY(-8px);
 
-    transform:translateY(-8px);
-
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
-
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
-.tpq-management-card img{
+.tpq-management-card img {
+  width: 110px;
 
-    width:110px;
+  height: 110px;
 
-    height:110px;
+  object-fit: cover;
 
-    object-fit:cover;
+  border-radius: 50%;
 
-    border-radius:50%;
+  border: 4px solid #2e7d32;
 
-    border:4px solid #2e7d32;
-
-    flex-shrink:0;
-
+  flex-shrink: 0;
 }
 
-.tpq-management-info{
-
-    flex:1;
-
+.tpq-management-info {
+  flex: 1;
 }
 
-.tpq-management-info h3{
+.tpq-management-info h3 {
+  font-size: 22px;
 
-    font-size:22px;
+  color: #184d2d;
 
-    color:#184d2d;
-
-    margin-bottom:10px;
-
+  margin-bottom: 10px;
 }
 
-.tpq-management-info p{
+.tpq-management-info p {
+  color: #666;
 
-    color:#666;
+  font-size: 16px;
 
-    font-size:16px;
-
-    line-height:1.7;
-
+  line-height: 1.7;
 }
 
 /*=====================================
       PENGURUS HADROH
 ======================================*/
 
-.hadroh-management{
+.hadroh-management {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#ffffff;
-
+  background: #ffffff;
 }
 
-.hadroh-management-grid{
+.hadroh-management-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(4, 1fr);
 
-    grid-template-columns:repeat(4,1fr);
+  gap: 30px;
 
-    gap:30px;
-
-    margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.hadroh-management-card{
+.hadroh-management-card {
+  background: #fff;
 
-    background:#fff;
+  padding: 35px 25px;
 
-    padding:35px 25px;
+  text-align: center;
 
-    text-align:center;
+  border-radius: 20px;
 
-    border-radius:20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+  border-top: 5px solid #2e7d32;
 
-    border-top:5px solid #2e7d32;
-
-    transition:.35s;
-
+  transition: 0.35s;
 }
 
-.hadroh-management-card:hover{
+.hadroh-management-card:hover {
+  transform: translateY(-10px);
 
-    transform:translateY(-10px);
-
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
-
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
-.hadroh-management-icon{
+.hadroh-management-icon {
+  width: 85px;
 
-    width:85px;
+  height: 85px;
 
-    height:85px;
+  margin: 0 auto 20px;
 
-    margin:0 auto 20px;
+  border-radius: 50%;
 
-    border-radius:50%;
+  background: #e8f5e9;
 
-    background:#e8f5e9;
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
-
-    align-items:center;
-
+  align-items: center;
 }
 
-.hadroh-management-icon i{
+.hadroh-management-icon i {
+  font-size: 34px;
 
-    font-size:34px;
-
-    color:#2e7d32;
-
+  color: #2e7d32;
 }
 
-.hadroh-management-card h3{
+.hadroh-management-card h3 {
+  font-size: 22px;
 
-    font-size:22px;
+  color: #184d2d;
 
-    color:#184d2d;
-
-    margin-bottom:12px;
-
+  margin-bottom: 12px;
 }
 
-.hadroh-management-card p{
+.hadroh-management-card p {
+  color: #666;
 
-    color:#666;
+  line-height: 1.8;
 
-    line-height:1.8;
-
-    font-size:15px;
-
+  font-size: 15px;
 }
 
 /*=====================================
       BIDANG KEPENGURUSAN
 ======================================*/
 
-.management-division{
+.management-division {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.management-division-grid{
+.management-division-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(2, 1fr);
 
-    grid-template-columns:repeat(2,1fr);
+  gap: 35px;
 
-    gap:35px;
-
-    margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.management-division-card{
+.management-division-card {
+  background: #fff;
 
-    background:#fff;
+  padding: 40px 35px;
 
-    padding:40px 35px;
+  text-align: center;
 
-    text-align:center;
+  border-radius: 20px;
 
-    border-radius:20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-
-    transition:.35s;
-
+  transition: 0.35s;
 }
 
-.management-division-card:hover{
+.management-division-card:hover {
+  transform: translateY(-10px);
 
-    transform:translateY(-10px);
-
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
-
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
-.management-division-card i{
+.management-division-card i {
+  font-size: 55px;
 
-    font-size:55px;
+  color: #2e7d32;
 
-    color:#2e7d32;
-
-    margin-bottom:20px;
-
+  margin-bottom: 20px;
 }
 
-.management-division-card h3{
+.management-division-card h3 {
+  font-size: 24px;
 
-    font-size:24px;
+  color: #184d2d;
 
-    color:#184d2d;
-
-    margin-bottom:15px;
-
+  margin-bottom: 15px;
 }
 
-.management-division-card p{
+.management-division-card p {
+  color: #666;
 
-    color:#666;
-
-    line-height:1.8;
-
+  line-height: 1.8;
 }
 
 /*=====================================
         PERIODE PENGURUS
 ======================================*/
 
-.management-period{
+.management-period {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#ffffff;
-
+  background: #ffffff;
 }
 
-.management-period-box{
+.management-period-box {
+  max-width: 700px;
 
-    max-width:700px;
+  margin: auto;
 
-    margin:auto;
+  text-align: center;
 
-    text-align:center;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
 
-    background:linear-gradient(135deg,#2e7d32,#1b5e20);
+  color: #fff;
 
-    color:#fff;
+  padding: 55px 30px;
 
-    padding:55px 30px;
+  border-radius: 25px;
 
-    border-radius:25px;
-
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
-
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
-.management-period-box h2{
+.management-period-box h2 {
+  font-size: 36px;
 
-    font-size:36px;
-
-    margin-bottom:15px;
-
+  margin-bottom: 15px;
 }
 
-.management-period-box p{
+.management-period-box p {
+  font-size: 24px;
 
-    font-size:24px;
+  font-weight: 600;
 
-    font-weight:600;
-
-    letter-spacing:1px;
-
+  letter-spacing: 1px;
 }
 
 /*=====================================
@@ -3254,352 +3074,286 @@ footer {
         AGENDA RUTIN
 ======================================*/
 
-.agenda-rutin{
+.agenda-rutin {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.agenda-table-wrapper{
+.agenda-table-wrapper {
+  margin-top: 50px;
 
-    margin-top:50px;
+  overflow-x: auto;
 
-    overflow-x:auto;
+  border-radius: 20px;
 
-    border-radius:20px;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-.agenda-table{
+.agenda-table {
+  width: 100%;
 
-    width:100%;
+  border-collapse: collapse;
 
-    border-collapse:collapse;
-
-    background:#fff;
-
+  background: #fff;
 }
 
-.agenda-table thead{
+.agenda-table thead {
+  background: #2e7d32;
 
-    background:#2e7d32;
-
-    color:#fff;
-
+  color: #fff;
 }
 
-.agenda-table th{
+.agenda-table th {
+  padding: 20px;
 
-    padding:20px;
+  text-align: center;
 
-    text-align:center;
+  font-size: 18px;
 
-    font-size:18px;
-
-    font-weight:600;
-
+  font-weight: 600;
 }
 
-.agenda-table td{
+.agenda-table td {
+  padding: 18px;
 
-    padding:18px;
+  text-align: center;
 
-    text-align:center;
+  border-bottom: 1px solid #e5e5e5;
 
-    border-bottom:1px solid #e5e5e5;
+  color: #555;
 
-    color:#555;
+  font-size: 16px;
 
-    font-size:16px;
-
-    transition:.3s;
-
+  transition: 0.3s;
 }
 
-.agenda-table tbody tr{
-
-    transition:.3s;
-
+.agenda-table tbody tr {
+  transition: 0.3s;
 }
 
-.agenda-table tbody tr:hover{
-
-    background:#f1f8f4;
-
+.agenda-table tbody tr:hover {
+  background: #f1f8f4;
 }
 
-.agenda-table tbody tr:last-child td{
-
-    border-bottom:none;
-
+.agenda-table tbody tr:last-child td {
+  border-bottom: none;
 }
 
 /*=====================================
         EVENT TAHUNAN
 ======================================*/
 
-.annual-events{
+.annual-events {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.annual-events-grid{
+.annual-events-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(3, 1fr);
 
-    grid-template-columns:repeat(3,1fr);
+  gap: 35px;
 
-    gap:35px;
-
-    margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.annual-events-card{
+.annual-events-card {
+  background: #fff;
 
-    background:#fff;
+  border-radius: 20px;
 
-    border-radius:20px;
+  overflow: hidden;
 
-    overflow:hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-
-    transition:.35s;
-
+  transition: 0.35s;
 }
 
-.annual-events-card:hover{
+.annual-events-card:hover {
+  transform: translateY(-10px);
 
-    transform:translateY(-10px);
-
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
-
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
 }
 
-.annual-events-card img{
+.annual-events-card img {
+  width: 100%;
 
-    width:100%;
+  height: 240px;
 
-    height:240px;
+  object-fit: cover;
 
-    object-fit:cover;
+  display: block;
 
-    display:block;
-
-    transition:.4s;
-
+  transition: 0.4s;
 }
 
-.annual-events-card:hover img{
-
-    transform:scale(1.05);
-
+.annual-events-card:hover img {
+  transform: scale(1.05);
 }
 
-.annual-events-content{
-
-    padding:25px;
-
+.annual-events-content {
+  padding: 25px;
 }
 
-.annual-events-content h3{
+.annual-events-content h3 {
+  font-size: 23px;
 
-    font-size:23px;
+  color: #184d2d;
 
-    color:#184d2d;
-
-    margin-bottom:15px;
-
+  margin-bottom: 15px;
 }
 
-.annual-events-content p{
+.annual-events-content p {
+  color: #666;
 
-    color:#666;
+  line-height: 1.8;
 
-    line-height:1.8;
-
-    font-size:15px;
-
+  font-size: 15px;
 }
 
 /*=====================================
       PENGUMUMAN TERBARU
 ======================================*/
 
-.latest-announcement{
+.latest-announcement {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.latest-announcement-list{
+.latest-announcement-list {
+  display: flex;
 
-    display:flex;
+  flex-direction: column;
 
-    flex-direction:column;
+  gap: 25px;
 
-    gap:25px;
-
-    margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.latest-announcement-card{
+.latest-announcement-card {
+  display: flex;
 
-    display:flex;
+  align-items: center;
 
-    align-items:center;
+  gap: 25px;
 
-    gap:25px;
+  background: #fff;
 
-    background:#fff;
+  padding: 28px;
 
-    padding:28px;
+  border-radius: 18px;
 
-    border-radius:18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    transition:.35s;
-
+  transition: 0.35s;
 }
 
-.latest-announcement-card:hover{
+.latest-announcement-card:hover {
+  transform: translateY(-6px);
 
-    transform:translateY(-6px);
-
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
-
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
-.announcement-icon{
+.announcement-icon {
+  width: 75px;
 
-    width:75px;
+  height: 75px;
 
-    height:75px;
+  background: #2e7d32;
 
-    background:#2e7d32;
+  border-radius: 50%;
 
-    border-radius:50%;
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
+  align-items: center;
 
-    align-items:center;
-
-    flex-shrink:0;
-
+  flex-shrink: 0;
 }
 
-.announcement-icon i{
+.announcement-icon i {
+  color: #fff;
 
-    color:#fff;
-
-    font-size:30px;
-
+  font-size: 30px;
 }
 
-.announcement-content{
-
-    flex:1;
-
+.announcement-content {
+  flex: 1;
 }
 
-.announcement-content h3{
+.announcement-content h3 {
+  color: #184d2d;
 
-    color:#184d2d;
+  font-size: 22px;
 
-    font-size:22px;
-
-    margin-bottom:10px;
-
+  margin-bottom: 10px;
 }
 
-.announcement-content p{
+.announcement-content p {
+  color: #666;
 
-    color:#666;
+  line-height: 1.8;
 
-    line-height:1.8;
-
-    font-size:15px;
-
+  font-size: 15px;
 }
 
 /*=====================================
         GALERI KEGIATAN
 ======================================*/
 
-.activity-gallery{
+.activity-gallery {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.activity-gallery-grid{
+.activity-gallery-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(3, 1fr);
 
-    grid-template-columns:repeat(3,1fr);
+  gap: 25px;
 
-    gap:25px;
-
-    margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.activity-gallery-item{
+.activity-gallery-item {
+  overflow: hidden;
 
-    overflow:hidden;
+  border-radius: 18px;
 
-    border-radius:18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+  cursor: pointer;
 
-    cursor:pointer;
-
-    transition:.35s;
-
+  transition: 0.35s;
 }
 
-.activity-gallery-item:hover{
+.activity-gallery-item:hover {
+  transform: translateY(-8px);
 
-    transform:translateY(-8px);
-
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
-
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
-.activity-gallery-item img{
+.activity-gallery-item img {
+  width: 100%;
 
-    width:100%;
+  height: 260px;
 
-    height:260px;
+  object-fit: cover;
 
-    object-fit:cover;
+  display: block;
 
-    display:block;
-
-    transition:.5s;
-
+  transition: 0.5s;
 }
 
-.activity-gallery-item:hover img{
-
-    transform:scale(1.08);
-
+.activity-gallery-item:hover img {
+  transform: scale(1.08);
 }
 
 /*=====================================
@@ -3610,220 +3364,181 @@ footer {
         INTRO GALERI
 ======================================*/
 
-.gallery-introduction{
+.gallery-introduction {
+  padding: 100px 0;
 
-    padding:100px 0;
+  background: linear(135deg, #f8faf8, #eef8f1);
 
-    background:linear(135deg,#f8faf8,#eef8f1);
-
-    text-align:center;
-
+  text-align: center;
 }
 
-.gallery-introduction .section-title{
+.gallery-introduction .section-title {
+  max-width: 850px;
 
-    max-width:850px;
-
-    margin:auto;
-
+  margin: auto;
 }
 
-.gallery-introduction h5{
+.gallery-introduction h5 {
+  color: #2e7d32;
 
-    color:#2e7d32;
+  font-size: 18px;
 
-    font-size:18px;
+  font-weight: 600;
 
-    font-weight:600;
+  text-transform: uppercase;
 
-    text-transform:uppercase;
+  letter-spacing: 2px;
 
-    letter-spacing:2px;
-
-    margin-bottom:12px;
-
+  margin-bottom: 12px;
 }
 
-.gallery-introduction h2{
+.gallery-introduction h2 {
+  font-size: 42px;
 
-    font-size:42px;
+  color: #184d2d;
 
-    color:#184d2d;
+  margin-bottom: 20px;
 
-    margin-bottom:20px;
-
-    line-height:1.3;
-
+  line-height: 1.3;
 }
 
-.gallery-introduction p{
+.gallery-introduction p {
+  font-size: 17px;
 
-    font-size:17px;
+  color: #666;
 
-    color:#666;
+  line-height: 1.9;
 
-    line-height:1.9;
+  max-width: 720px;
 
-    max-width:720px;
-
-    margin:0 auto;
-
+  margin: 0 auto;
 }
 
 /*=====================================
         FILTER GALERI
 ======================================*/
 
-.photo-filter{
+.photo-filter {
+  padding: 40px 0;
 
-    padding:40px 0;
-
-    background:#fff;
-
+  background: #fff;
 }
 
-.photo-filter-buttons{
+.photo-filter-buttons {
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
+  flex-wrap: wrap;
 
-    flex-wrap:wrap;
-
-    gap:15px;
-
+  gap: 15px;
 }
 
-.photo-filter-buttons button{
+.photo-filter-buttons button {
+  padding: 12px 28px;
 
-    padding:12px 28px;
+  border: none;
 
-    border:none;
+  border-radius: 30px;
 
-    border-radius:30px;
+  background: #e8f5e9;
 
-    background:#e8f5e9;
+  color: #2e7d32;
 
-    color:#2e7d32;
+  font-size: 16px;
 
-    font-size:16px;
+  font-weight: 600;
 
-    font-weight:600;
+  cursor: pointer;
 
-    cursor:pointer;
-
-    transition:.3s;
-
+  transition: 0.3s;
 }
 
 .photo-filter-buttons button:hover,
+.photo-filter-buttons button.active {
+  background: #2e7d32;
 
-.photo-filter-buttons button.active{
-
-    background:#2e7d32;
-
-    color:#fff;
-
+  color: #fff;
 }
-
-
 
 /*=====================================
             GALERI
 ======================================*/
 
-.photo-gallery{
+.photo-gallery {
+  padding: 80px 0 100px;
 
-    padding:80px 0 100px;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.photo-gallery-grid{
+.photo-gallery-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(3, 1fr);
 
-    grid-template-columns:repeat(3,1fr);
-
-    gap:25px;
-
+  gap: 25px;
 }
 
-.photo-gallery-card{
+.photo-gallery-card {
+  position: relative;
 
-    position:relative;
+  overflow: hidden;
 
-    overflow:hidden;
+  border-radius: 20px;
 
-    border-radius:20px;
+  cursor: pointer;
 
-    cursor:pointer;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 
-    box-shadow:0 12px 30px rgba(0,0,0,.1);
-
-    transition:.35s;
-
+  transition: 0.35s;
 }
 
-.photo-gallery-card:hover{
-
-    transform:translateY(-8px);
-
+.photo-gallery-card:hover {
+  transform: translateY(-8px);
 }
 
-.photo-gallery-card img{
+.photo-gallery-card img {
+  width: 100%;
 
-    width:100%;
+  height: 280px;
 
-    height:280px;
+  object-fit: cover;
 
-    object-fit:cover;
+  display: block;
 
-    display:block;
-
-    transition:.5s;
-
+  transition: 0.5s;
 }
 
-.photo-gallery-card:hover img{
-
-    transform:scale(1.08);
-
+.photo-gallery-card:hover img {
+  transform: scale(1.08);
 }
 
-.photo-gallery-overlay{
+.photo-gallery-overlay {
+  position: absolute;
 
-    position:absolute;
+  inset: 0;
 
-    inset:0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
 
-    background:linear-gradient(to top,rgba(0,0,0,.75),transparent);
+  display: flex;
 
-    display:flex;
+  align-items: flex-end;
 
-    align-items:flex-end;
+  padding: 25px;
 
-    padding:25px;
+  opacity: 0;
 
-    opacity:0;
-
-    transition:.35s;
-
+  transition: 0.35s;
 }
 
-.photo-gallery-card:hover .photo-gallery-overlay{
-
-    opacity:1;
-
+.photo-gallery-card:hover .photo-gallery-overlay {
+  opacity: 1;
 }
 
-.photo-gallery-overlay h3{
+.photo-gallery-overlay h3 {
+  color: #fff;
 
-    color:#fff;
-
-    font-size:22px;
-
+  font-size: 22px;
 }
 
 /*=====================================
@@ -3834,428 +3549,354 @@ footer {
       INFORMASI KONTAK
 ======================================*/
 
-.contact-information{
+.contact-information {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.contact-information-grid{
+.contact-information-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(4, 1fr);
 
-    grid-template-columns:repeat(4,1fr);
+  gap: 30px;
 
-    gap:30px;
-
-    margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.contact-information-card{
+.contact-information-card {
+  background: #fff;
 
-    background:#fff;
+  padding: 35px 25px;
 
-    padding:35px 25px;
+  border-radius: 20px;
 
-    border-radius:20px;
+  text-align: center;
 
-    text-align:center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-
-    transition:.35s;
-
+  transition: 0.35s;
 }
 
-.contact-information-card:hover{
+.contact-information-card:hover {
+  transform: translateY(-8px);
 
-    transform:translateY(-8px);
-
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
-
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
-.contact-information-card i{
+.contact-information-card i {
+  width: 75px;
 
-    width:75px;
+  height: 75px;
 
-    height:75px;
+  line-height: 75px;
 
-    line-height:75px;
+  border-radius: 50%;
 
-    border-radius:50%;
+  background: #2e7d32;
 
-    background:#2e7d32;
+  color: #fff;
 
-    color:#fff;
+  font-size: 30px;
 
-    font-size:30px;
-
-    margin-bottom:20px;
-
+  margin-bottom: 20px;
 }
 
-.contact-information-card h3{
+.contact-information-card h3 {
+  font-size: 22px;
 
-    font-size:22px;
+  color: #184d2d;
 
-    color:#184d2d;
-
-    margin-bottom:15px;
-
+  margin-bottom: 15px;
 }
 
-.contact-information-card p{
+.contact-information-card p {
+  color: #666;
 
-    color:#666;
+  line-height: 1.8;
 
-    line-height:1.8;
-
-    font-size:16px;
-
+  font-size: 16px;
 }
 
 /*=====================================
         MEDIA SOSIAL KONTAK
 ======================================*/
 
-.contact-social{
+.contact-social {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.contact-social-grid{
+.contact-social-grid {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(4, 1fr);
 
-    grid-template-columns:repeat(4,1fr);
+  gap: 25px;
 
-    gap:25px;
-
-    margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.contact-social-card{
+.contact-social-card {
+  background: #fff;
 
-    background:#fff;
+  padding: 35px 20px;
 
-    padding:35px 20px;
+  border-radius: 20px;
 
-    border-radius:20px;
+  text-align: center;
 
-    text-align:center;
+  text-decoration: none;
 
-    text-decoration:none;
+  color: #222;
 
-    color:#222;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-
-    transition:.35s;
-
+  transition: 0.35s;
 }
 
-.contact-social-card:hover{
+.contact-social-card:hover {
+  transform: translateY(-8px);
 
-    transform:translateY(-8px);
-
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
-
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
-.contact-social-card i{
+.contact-social-card i {
+  width: 70px;
 
-    width:70px;
+  height: 70px;
 
-    height:70px;
+  line-height: 70px;
 
-    line-height:70px;
+  border-radius: 50%;
 
-    border-radius:50%;
+  background: #2e7d32;
 
-    background:#2e7d32;
+  color: #fff;
 
-    color:#fff;
+  font-size: 28px;
 
-    font-size:28px;
-
-    margin-bottom:18px;
-
+  margin-bottom: 18px;
 }
 
-.contact-social-card h3{
+.contact-social-card h3 {
+  font-size: 22px;
 
-    font-size:22px;
+  color: #184d2d;
 
-    color:#184d2d;
-
-    margin-bottom:10px;
-
+  margin-bottom: 10px;
 }
 
-.contact-social-card span{
+.contact-social-card span {
+  color: #666;
 
-    color:#666;
-
-    font-size:15px;
-
+  font-size: 15px;
 }
-
-
 
 /*=====================================
         FORM KONTAK
 ======================================*/
 
-.contact-form-section{
+.contact-form-section {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#fff;
-
+  background: #fff;
 }
 
-.contact-form{
+.contact-form {
+  max-width: 700px;
 
-    max-width:700px;
-
-    margin:50px auto 0;
-
+  margin: 50px auto 0;
 }
 
-.contact-input{
-
-    margin-bottom:25px;
-
+.contact-input {
+  margin-bottom: 25px;
 }
 
 .contact-input input,
+.contact-input textarea {
+  width: 100%;
 
-.contact-input textarea{
+  padding: 18px 22px;
 
-    width:100%;
+  border: 1px solid #ddd;
 
-    padding:18px 22px;
+  border-radius: 15px;
 
-    border:1px solid #ddd;
+  font-size: 16px;
 
-    border-radius:15px;
+  font-family: inherit;
 
-    font-size:16px;
+  transition: 0.3s;
 
-    font-family:inherit;
-
-    transition:.3s;
-
-    outline:none;
-
+  outline: none;
 }
 
-.contact-input textarea{
+.contact-input textarea {
+  min-height: 180px;
 
-    min-height:180px;
-
-    resize:vertical;
-
+  resize: vertical;
 }
 
 .contact-input input:focus,
+.contact-input textarea:focus {
+  border-color: #2e7d32;
 
-.contact-input textarea:focus{
-
-    border-color:#2e7d32;
-
-    box-shadow:0 0 0 4px rgba(46,125,50,.12);
-
+  box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.12);
 }
 
-.contact-button{
+.contact-button {
+  width: 100%;
 
-    width:100%;
+  padding: 18px;
 
-    padding:18px;
+  border: none;
 
-    border:none;
+  border-radius: 15px;
 
-    border-radius:15px;
+  background: #2e7d32;
 
-    background:#2e7d32;
+  color: #fff;
 
-    color:#fff;
+  font-size: 17px;
 
-    font-size:17px;
+  font-weight: 600;
 
-    font-weight:600;
+  cursor: pointer;
 
-    cursor:pointer;
-
-    transition:.3s;
-
+  transition: 0.3s;
 }
 
-.contact-button:hover{
-
-    background:#184d2d;
-
+.contact-button:hover {
+  background: #184d2d;
 }
 
 /*=====================================
         LOKASI
 ======================================*/
 
-.contact-location{
+.contact-location {
+  padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8faf8;
-
+  background: #f8faf8;
 }
 
-.contact-location-map{
+.contact-location-map {
+  margin-top: 50px;
 
-    margin-top:50px;
+  border-radius: 20px;
 
-    border-radius:20px;
+  overflow: hidden;
 
-    overflow:hidden;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.12);
-
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
-.contact-location-map iframe{
+.contact-location-map iframe {
+  width: 100%;
 
-    width:100%;
+  height: 500px;
 
-    height:500px;
-
-    border:0;
-
+  border: 0;
 }
-
-
 
 /*=====================================
         WHATSAPP
 ======================================*/
 
-.contact-whatsapp{
+.contact-whatsapp {
+  padding: 90px 0;
 
-    padding:90px 0;
-
-    background:#ffffff;
-
+  background: #ffffff;
 }
 
-.contact-whatsapp-card{
+.contact-whatsapp-card {
+  display: flex;
 
-    display:flex;
+  align-items: center;
 
-    align-items:center;
+  justify-content: space-between;
 
-    justify-content:space-between;
+  gap: 40px;
 
-    gap:40px;
+  padding: 40px;
 
-    padding:40px;
+  border-radius: 25px;
 
-    border-radius:25px;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
 
-    background:linear-gradient(135deg,#2e7d32,#1b5e20);
+  color: #fff;
 
-    color:#fff;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.15);
-
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-.contact-whatsapp-icon{
+.contact-whatsapp-icon {
+  width: 90px;
 
-    width:90px;
+  height: 90px;
 
-    height:90px;
+  min-width: 90px;
 
-    min-width:90px;
+  border-radius: 50%;
 
-    border-radius:50%;
+  background: rgba(255, 255, 255, 0.15);
 
-    background:rgba(255,255,255,.15);
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
-
-    align-items:center;
-
+  align-items: center;
 }
 
-.contact-whatsapp-icon i{
-
-    font-size:45px;
-
+.contact-whatsapp-icon i {
+  font-size: 45px;
 }
 
-.contact-whatsapp-content{
-
-    flex:1;
-
+.contact-whatsapp-content {
+  flex: 1;
 }
 
-.contact-whatsapp-content h2{
+.contact-whatsapp-content h2 {
+  font-size: 34px;
 
-    font-size:34px;
-
-    margin-bottom:12px;
-
+  margin-bottom: 12px;
 }
 
-.contact-whatsapp-content p{
+.contact-whatsapp-content p {
+  font-size: 16px;
 
-    font-size:16px;
+  line-height: 1.8;
 
-    line-height:1.8;
-
-    color:#eef8ee;
-
+  color: #eef8ee;
 }
 
-.contact-whatsapp-button a{
+.contact-whatsapp-button a {
+  display: inline-flex;
 
-    display:inline-flex;
+  align-items: center;
 
-    align-items:center;
+  gap: 10px;
 
-    gap:10px;
+  padding: 16px 30px;
 
-    padding:16px 30px;
+  background: #fff;
 
-    background:#fff;
+  color: #2e7d32;
 
-    color:#2e7d32;
+  border-radius: 50px;
 
-    border-radius:50px;
+  text-decoration: none;
 
-    text-decoration:none;
+  font-weight: 700;
 
-    font-weight:700;
-
-    transition:.3s;
-
+  transition: 0.3s;
 }
 
-.contact-whatsapp-button a:hover{
+.contact-whatsapp-button a:hover {
+  transform: translateY(-5px);
 
-    transform:translateY(-5px);
-
-    background:#f5f5f5;
-
+  background: #f5f5f5;
 }
 
 /* =====================================
@@ -4323,88 +3964,82 @@ footer {
 }
 
 /* TOMBOL MENU - HANYA UNTUK MOBILE */
-.menu-toggle{
-    display:none;
+.menu-toggle {
+  display: none;
 }
 
-@media (max-width:768px){
+@media (max-width: 768px) {
+  /* Container */
 
-    /* Container */
+  .container {
+    width: 100%;
+    padding: 0 18px;
+  }
 
-.container{
-    width:100%;
-    padding:0 18px;
-}
+  /* Header */
 
-/* Header */
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+  }
 
-#header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-}
+  #header .container {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-#header .container{
-        height:75px;
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        position:relative;
-    }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 
+  .logo img {
+    width: 48px;
+    height: 48px;
+  }
 
-.logo{
-        display:flex;
-        align-items:center;
-    }
+  .logo h2 {
+    font-size: 18px;
+    margin: 0;
+  }
 
-    .logo img{
-        width:45px;
-        height:45px;
-    }
+  .logo span {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
 
-    .logo h2{
-        font-size:18px;
-    }
-
-    .logo span{
-        font-size:10px;
-    }
-
-    .menu-toggle {
-    display: flex !important;
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 42px;
     height: 42px;
 
-    align-items: center;
-    justify-content: center;
-
-    font-size: 28px;
-    color: var(--hijau-tua);
-
     cursor: pointer;
 
-    flex-shrink: 0;
+    font-size: 30px;
+    color: #228b22;
   }
 
   #navbar {
     position: absolute;
-
     top: 75px;
     left: 0;
-
     width: 100%;
-
-    background: #ffffff;
+    background: #fff;
 
     max-height: 0;
     overflow: hidden;
 
-    transition: max-height 0.4s ease;
-
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
   }
 
   #navbar.active {
@@ -4413,406 +4048,400 @@ footer {
 
   #navbar ul {
     display: flex;
-
     flex-direction: column;
-
-    gap: 0;
   }
 
-  #navbar ul li {
+  #navbar li {
     width: 100%;
   }
 
-  #navbar ul li a {
+  #navbar a {
     display: block;
-
-    padding: 15px 25px;
-
-    border-bottom: 1px solid #eeeeee;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
   }
-/* Button */
+  /* Button */
 
-.btn{
-    padding:10px 24px;
-    font-size:15px;
-}
+  .btn {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
 
-/* Section Title */
+  /* Section Title */
 
-.section-title{
-    margin-bottom:30px;
-}
+  .section-title {
+    margin-bottom: 30px;
+  }
 
-.section-title h5{
-    font-size:15px;
-}
+  .section-title h5 {
+    font-size: 15px;
+  }
 
-.section-title h2{
-    font-size:28px;
-    line-height:1.3;
-}
+  .section-title h2 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
 
-.section-title p{
-    font-size:15px;
-    line-height:1.8;
-}
+  .section-title p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
 
-/* Card */
+  /* Card */
 
-.card,
-.program-card,
-.kontak-card,
-.sholat-card,
-.calendar-card,
-.anggota-card,
-.pengurus-card{
-    border-radius:15px;
-}
+  .card,
+  .program-card,
+  .kontak-card,
+  .sholat-card,
+  .calendar-card,
+  .anggota-card,
+  .pengurus-card {
+    border-radius: 15px;
+  }
 
-/* =====================================
+  /* =====================================
    MOBILE - HERO
 ===================================== */
 
-.hero{
-    min-height:100vh;
-    padding:120px 20px 60px;
-    display:flex;
-    align-items:center;
-}
+  .hero {
+    min-height: 100vh;
+    padding: 110px 20px 50px;
+    display: flex;
+    align-items: center;
+  }
 
-.hero-content{
-    width:100%;
-    text-align:center;
-}
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
 
-.hero-content h1{
-    font-size:20px;
-    line-height:1.4;
-    font-weight:700;
-    text-align:center;
-}
+  .hero-content h1 {
+    font-size: 25px;
+    line-height: 1.35;
+    font-weight: 700;
+  }
 
-.hero-content h1 span{
-    display:block;
-    margin-top:8px;
-    font-size:20px;
-    line-height:1.4;
-}
+  .hero-content h1 span {
+    display: block;
+    margin-top: 8px;
+    font-size: 25px;
+  }
 
-.hero-content p{
-    font-size:14px;
-    max-width:300px;
-    margin:18px auto 0;
-}
-
-/* =====================================
+  .hero-content p {
+    margin: 18px auto 0;
+    width: 90%;
+    max-width: 310px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  /* =====================================
    MOBILE - DASHBOARD
 ===================================== */
 
-.dashboard{
-    padding:50px 0;
-}
+  .dashboard {
+    padding: 50px 0;
+  }
 
-.info-bar{
-    grid-template-columns:1fr;
-    gap:20px;
-    padding:25px 20px;
-}
+  .info-bar {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 25px 20px;
+  }
 
-.info-item{
-    padding:10px 0;
-}
+  .info-item {
+    padding: 10px 0;
+  }
 
-.info-item i{
-    font-size:28px;
-}
+  .info-item i {
+    font-size: 28px;
+  }
 
-.info-item h4{
-    font-size:16px;
-}
+  .info-item h4 {
+    font-size: 16px;
+  }
 
-.info-item h2{
-    font-size:28px;
-}
+  .info-item h2 {
+    font-size: 28px;
+  }
 
-/* Prayer Card */
+  /* Prayer Card */
 
-.prayer-card{
-    padding:25px 20px;
-}
+  .prayer-card {
+    padding: 25px 20px;
+  }
 
-.prayer-card h3{
-    font-size:24px;
-    margin-bottom:20px;
-}
+  .prayer-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 
-.prayer-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
-}
+  .prayer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
 
-.prayer-grid div{
-    padding:12px;
-    border-radius:12px;
-    background:#f8f8f8;
-}
+  .prayer-grid div {
+    padding: 12px;
+    border-radius: 12px;
+    background: #f8f8f8;
+  }
 
-.prayer-grid span{
-    font-size:14px;
-}
+  .prayer-grid span {
+    font-size: 14px;
+  }
 
-.prayer-grid strong{
-    font-size:20px;
-}
+  .prayer-grid strong {
+    font-size: 20px;
+  }
 
-/* =====================================
+  /* =====================================
    MOBILE - TENTANG KAMI
 ===================================== */
 
-.about{
-    padding:60px 0;
-}
+  .about {
+    padding: 60px 0;
+  }
 
-.about .container{
-    width:100%;
-}
+  .about .container {
+    width: 100%;
+  }
 
-.section-title{
-    margin-bottom:35px;
-}
+  .section-title {
+    margin-bottom: 35px;
+  }
 
-.section-title h5{
-    font-size:16px;
-}
+  .section-title h5 {
+    font-size: 16px;
+  }
 
-.section-title h2{
-    font-size:30px;
-    line-height:1.3;
-}
+  .section-title h2 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
 
-.section-title p{
-    font-size:15px;
-    line-height:1.8;
-}
+  .section-title p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
 
-.about-image{
-    margin:25px 0;
-}
+  .about-image {
+    margin: 25px 0;
+  }
 
-.about-image img{
-    height:250px;
-    border-radius:15px;
-}
+  .about-image img {
+    height: 250px;
+    border-radius: 15px;
+  }
 
-.about-content{
-    width:100%;
-}
+  .about-content {
+    width: 100%;
+  }
 
-.item{
-    flex-direction:column;
-    gap:12px;
-    margin-bottom:25px;
-    text-align:center;
-}
+  .item {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
 
-.item i{
-    margin:auto;
-}
+  .item i {
+    margin: auto;
+  }
 
-/* =====================================
+  /* =====================================
    MOBILE - SAMBUTAN PENGASUH
 ===================================== */
 
-.pengasuh-home{
-    padding:60px 0;
-}
+  .pengasuh-home {
+    padding: 60px 0;
+  }
 
-.pengasuh-grid{
-    grid-template-columns:1fr;
-    gap:35px;
-}
+  .pengasuh-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
 
-.foto img{
-    max-width:260px;
-    margin:auto;
-}
+  .foto img {
+    max-width: 260px;
+    margin: auto;
+  }
 
-.isi{
-    text-align:center;
-}
+  .isi {
+    text-align: center;
+  }
 
-.isi h5{
-    font-size:16px;
-    letter-spacing:1px;
-}
+  .isi h5 {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
 
-.isi h2{
-    font-size:30px;
-    line-height:1.3;
-}
+  .isi h2 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
 
-.jabatan{
-    font-size:16px;
-    margin-bottom:20px;
-}
+  .jabatan {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 
-.isi p{
-    text-align:justify;
-    font-size:15px;
-    line-height:1.8;
-    margin-bottom:25px;
-}
+  .isi p {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
 
-.isi .btn{
-    width:100%;
-    max-width:260px;
-}
+  .isi .btn {
+    width: 100%;
+    max-width: 260px;
+  }
 
-/* =====================================
+  /* =====================================
    MOBILE - STATISTIK
 ===================================== */
 
-.counter{
-    padding:60px 0;
-}
+  .counter {
+    padding: 60px 0;
+  }
 
-.counter-grid{
-    margin-top:35px;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
-}
+  .counter-grid {
+    margin-top: 35px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
 
-.counter-box{
-    padding:25px 15px;
-}
+  .counter-box {
+    padding: 25px 15px;
+  }
 
-.counter-box i{
-    width:60px;
-    height:60px;
-    font-size:24px;
-    margin-bottom:15px;
-}
+  .counter-box i {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
 
-.counter-box h2{
-    font-size:28px;
-}
+  .counter-box h2 {
+    font-size: 28px;
+  }
 
-.counter-box p{
-    font-size:15px;
-}
+  .counter-box p {
+    font-size: 15px;
+  }
 
-.guru-home{
-    padding:60px 0;
-}
+  .guru-home {
+    padding: 60px 0;
+  }
 
-.guru-grid{
-    grid-template-columns:1fr;
-    gap:25px;
-    margin-top:35px;
-}
+  .guru-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 35px;
+  }
 
-.guru-card img{
-    height:300px;
-}
+  .guru-card img {
+    height: 300px;
+  }
 
-.guru-card h3{
-    font-size:22px;
-}
+  .guru-card h3 {
+    font-size: 22px;
+  }
 
-.guru-card span{
-    font-size:15px;
-    margin:10px 0 20px;
-}
+  .guru-card span {
+    font-size: 15px;
+    margin: 10px 0 20px;
+  }
 
-.center{
-    margin-top:35px;
-}
+  .center {
+    margin-top: 35px;
+  }
 
-/* =====================================
+  /* =====================================
    MOBILE - HADROH
 ===================================== */
 
-.hadroh-home{
-    padding:60px 0;
-}
+  .hadroh-home {
+    padding: 60px 0;
+  }
 
-.hadroh-content h5{
-    font-size:16px;
-    letter-spacing:1px;
-}
+  .hadroh-content h5 {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
 
-.hadroh-content h2{
-    font-size:30px;
-    line-height:1.3;
-    margin-bottom:25px;
-}
+  .hadroh-content h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
 
-.hadroh-image{
-    margin-bottom:25px;
-}
+  .hadroh-image {
+    margin-bottom: 25px;
+  }
 
-.hadroh-image img{
-    height:240px;
-    border-radius:15px;
-}
+  .hadroh-image img {
+    height: 240px;
+    border-radius: 15px;
+  }
 
-.hadroh-content p{
-    font-size:15px;
-    line-height:1.8;
-    text-align:justify;
-}
+  .hadroh-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+  }
 
-.hadroh-content ul{
-    max-width:100%;
-    margin-bottom:30px;
-}
+  .hadroh-content ul {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
 
-.hadroh-content li{
-    font-size:15px;
-    gap:10px;
-}
+  .hadroh-content li {
+    font-size: 15px;
+    gap: 10px;
+  }
 
-.hadroh-content .btn{
-    width:100%;
-    max-width:260px;
-}
+  .hadroh-content .btn {
+    width: 100%;
+    max-width: 260px;
+  }
 
-/* =====================================
+  /* =====================================
    MOBILE - JADWAL HADROH
 ===================================== */
 
-.jadwal-home{
-    padding:60px 0;
-}
+  .jadwal-home {
+    padding: 60px 0;
+  }
 
-.jadwal-grid{
-    grid-template-columns:1fr;
-    gap:20px;
-    margin-top:35px;
-}
+  .jadwal-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 35px;
+  }
 
-.jadwal-card{
-    padding:25px 20px;
-}
+  .jadwal-card {
+    padding: 25px 20px;
+  }
 
-.jadwal-card > i{
-    width:60px;
-    height:60px;
-    font-size:24px;
-}
+  .jadwal-card > i {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
 
-.jadwal-card h3{
-    font-size:24px;
-    margin-bottom:15px;
-}
+  .jadwal-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
 
-.jadwal-card p{
-    font-size:15px;
-    gap:8px;
-    flex-wrap:wrap;
-}
+  .jadwal-card p {
+    font-size: 15px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 
-/* =====================================
+  /* =====================================
      KEGIATAN
   ===================================== */
 
@@ -4862,7 +4491,6 @@ footer {
     padding: 9px 20px;
     font-size: 14px;
   }
-
 
   /* =====================================
      MAPS
@@ -4917,7 +4545,6 @@ footer {
     padding: 12px 20px;
   }
 
-
   /* =====================================
      MEDIA SOSIAL HOME
   ===================================== */
@@ -4946,7 +4573,6 @@ footer {
     font-size: 16px;
     line-height: 1.4;
   }
-
 
   /* =====================================
      FOOTER
@@ -5000,61 +4626,56 @@ footer {
     padding: 18px 15px;
     font-size: 13px;
   }
-
-
 }
 
 /* Jika ingin 1 kolom di HP kecil */
 
-@media (max-width:480px){
+@media (max-width: 480px) {
+  .prayer-grid {
+    grid-template-columns: 1fr;
+  }
 
-.prayer-grid{
-    grid-template-columns:1fr;
-}
+  .hero-content h1 {
+    font-size: 30px;
+  }
 
-.hero-content h1{
-    font-size:30px;
-}
+  .hero-content p {
+    font-size: 15px;
+  }
 
-.hero-content p{
-    font-size:15px;
-}
+  .counter-grid {
+    grid-template-columns: 1fr;
+  }
 
+  .about-image img {
+    height: 220px;
+  }
 
-.counter-grid{
-    grid-template-columns:1fr;
-}
+  .isi h2 {
+    font-size: 26px;
+  }
 
-.about-image img{
-    height:220px;
-}
+  .section-title h2 {
+    font-size: 26px;
+  }
 
-.isi h2{
-    font-size:26px;
-}
+  .guru-card img {
+    height: 250px;
+  }
 
-.section-title h2{
-    font-size:26px;
-}
+  .hadroh-content h2 {
+    font-size: 26px;
+  }
 
-.guru-card img{
-    height:250px;
-}
+  .hadroh-image img {
+    height: 200px;
+  }
 
-.hadroh-content h2{
-    font-size:26px;
-}
+  .jadwal-card {
+    padding: 20px 15px;
+  }
 
-.hadroh-image img{
-    height:200px;
-}
-
-.jadwal-card{
-    padding:20px 15px;
-}
-
-.jadwal-card h3{
-    font-size:22px;
-}
-
+  .jadwal-card h3 {
+    font-size: 22px;
+  }
 }
