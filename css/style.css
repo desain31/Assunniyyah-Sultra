@@ -4264,16 +4264,6 @@ footer {
    JAVASCRIPT EFFECT
 ===================================== */
 
-.menu-toggle {
-  display: none;
-
-  font-size: 28px;
-
-  color: var(--hijau-tua);
-
-  cursor: pointer;
-}
-
 .card,
 .program-card,
 .kontak-card,
@@ -4467,33 +4457,35 @@ footer {
 
 .hero{
     min-height:100vh;
-    height:auto;
-    padding:110px 20px 70px;
-    background-position:center;
+    padding:120px 20px 60px;
 }
 
 .hero-content{
     width:100%;
     max-width:100%;
 }
-
 .hero-content h1{
+    width:100%;
     font-size:24px;
-    line-height:1.4;
+    line-height:1.5;
     text-align:center;
+
+    white-space:normal !important;
+    word-break:normal;
+    overflow-wrap:break-word;
 }
 
 .hero-content .line1,
 .hero-content .line2{
-    display:block;
+     display:block;
+    white-space:normal !important;
 }
 
 .hero-content p{
+    margin-top:20px;
     font-size:17px;
     line-height:1.8;
     white-space:normal;
-    margin-top:20px;
-    padding:0 5px;
 }
 
 /* =====================================
