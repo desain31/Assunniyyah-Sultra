@@ -34,38 +34,29 @@
     <header id="header">
       <div class="container">
         <a href="index.html" class="logo">
-          <img src="images/logo.png" />
+          <img src="images/logo.png" alt="Logo" />
 
-          <div>
+          <div class="logo-text">
             <h2>ASSUNNIYYAH</h2>
-
             <span>SULAWESI TENGGARA</span>
           </div>
         </a>
 
         <!-- Menu Mobile -->
         <div class="menu-toggle" id="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars"></i>
         </div>
 
         <nav id="navbar">
           <ul>
             <li><a href="index.html">Beranda</a></li>
-
             <li><a href="profil.html">Profil</a></li>
-
             <li><a href="pengasuh.html" class="active">Pengasuh</a></li>
-
             <li><a href="guru.html">Guru TPQ</a></li>
-
             <li><a href="hadroh.html">Hadroh</a></li>
-
             <li><a href="pengurus.html">Pengurus</a></li>
-
             <li><a href="kegiatan.html">Kegiatan</a></li>
-
             <li><a href="galeri.html">Galeri</a></li>
-
             <li><a href="kontak.html">Kontak</a></li>
           </ul>
         </nav>
@@ -77,9 +68,7 @@
     <section class="page-banner">
       <div class="overlay"></div>
 
-      <div class="container">
-       
-      </div>
+      <div class="container"></div>
     </section>
 
     <!-- ========================= -->
@@ -153,7 +142,10 @@
 
         <div class="gallery-grid">
           <div class="gallery-item">
-            <img src="images/pengasuh/1.jpg" alt="Fotbar Hadroh Assunniyyah Sultra" />
+            <img
+              src="images/pengasuh/1.jpg"
+              alt="Fotbar Hadroh Assunniyyah Sultra"
+            />
 
             <div class="gallery-overlay">
               <h3>Fotbar Hadroh Assunniyyah Sultra</h3>
@@ -161,7 +153,10 @@
           </div>
 
           <div class="gallery-item">
-            <img src="images/pengasuh/2.jpg" alt="Fotbar Perpisahan Guru Tugas 2023-2025" />
+            <img
+              src="images/pengasuh/2.jpg"
+              alt="Fotbar Perpisahan Guru Tugas 2023-2025"
+            />
 
             <div class="gallery-overlay">
               <h3>Fotbar Perpisahan Guru Tugas 2023-2025</h3>
@@ -175,27 +170,12 @@
               <h3>Bukber Tahun 2025</h3>
             </div>
           </div>
-
-          </div>
         </div>
       </div>
     </section>
 
     <script src="js/script.js"></script>
 
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    const menu = document.getElementById("menu-toggle");
-    const navbar = document.getElementById("navbar");
-
-    if (menu && navbar) {
-        menu.addEventListener("click", function () {
-            navbar.classList.toggle("active");
-        });
-    }
-
-});
-</script>
+   
   </body>
 </html>
