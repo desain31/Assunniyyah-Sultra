@@ -4103,17 +4103,19 @@ footer {
    MOBILE - HERO
 ===================================== */
 
-  .hero {
-    min-height: 100vh;
-    padding: 110px 20px 50px;
-    display: flex;
-    align-items: center;
-  }
+  .hero{
+    min-height:100vh;
+    padding:90px 20px 40px;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+}
 
-  .hero-content {
-    width: 100%;
-    text-align: center;
-  }
+.hero-content{
+    width:100%;
+    text-align:center;
+    margin-top:90px;
+}
 
   .hero-title {
     display: flex;
