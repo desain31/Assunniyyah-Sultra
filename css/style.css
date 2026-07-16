@@ -4260,64 +4260,10 @@ footer {
 
 }
 
-/* ===============================
-   MOBILE NAVBAR
-================================= */
-
 .menu-toggle{
     display:none;
 }
 
-.menu-toggle{
-    display:none;
-}
-
-@media (max-width:768px){
-
-.menu-toggle{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:42px;
-    height:42px;
-    font-size:28px;
-    color:#2e7d32;
-    cursor:pointer;
-    z-index:1001;
-}
-
-#navbar{
-    position:absolute;
-    top:70px;
-    left:0;
-    width:100%;
-    background:#fff;
-    box-shadow:0 10px 20px rgba(0,0,0,.1);
-
-    display:none;
-}
-
-#navbar.active{
-    display:block;
-}
-
-#navbar ul{
-    display:flex;
-    flex-direction:column;
-    width:100%;
-}
-
-#navbar ul li{
-    width:100%;
-}
-
-#navbar ul li a{
-    display:block;
-    padding:16px 20px;
-    border-bottom:1px solid #eee;
-}
-
-}
 /* =====================================
    JAVASCRIPT EFFECT
 ===================================== */
@@ -4390,4 +4336,398 @@ footer {
   opacity: 1;
 
   visibility: visible;
+}
+
+@media (max-width:768px){
+
+    /* Container */
+
+.container{
+    width:100%;
+    padding:0 18px;
+}
+
+/* Header */
+
+#header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+#header .container{
+    height:70px;
+    padding:0;
+}
+
+/* Logo */
+
+.logo{
+    gap:10px;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+}
+
+.logo h2{
+    font-size:18px;
+}
+
+.logo span{
+    font-size:10px;
+    letter-spacing:1px;
+}
+
+/* Tombol Menu */
+
+.menu-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    color:var(--hijau-tua);
+    cursor:pointer;
+    z-index:1001;
+}
+
+/* Navbar */
+
+#navbar{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#fff;
+    display:none;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+#navbar.active{
+    display:block;
+}
+
+#navbar ul{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+}
+
+#navbar ul li{
+    width:100%;
+}
+
+#navbar ul li a{
+    display:block;
+    padding:16px 20px;
+    border-bottom:1px solid #eee;
+    font-size:15px;
+}
+
+/* Button */
+
+.btn{
+    padding:10px 24px;
+    font-size:15px;
+}
+
+/* Section Title */
+
+.section-title{
+    margin-bottom:30px;
+}
+
+.section-title h5{
+    font-size:15px;
+}
+
+.section-title h2{
+    font-size:28px;
+    line-height:1.3;
+}
+
+.section-title p{
+    font-size:15px;
+    line-height:1.8;
+}
+
+/* Card */
+
+.card,
+.program-card,
+.kontak-card,
+.sholat-card,
+.calendar-card,
+.anggota-card,
+.pengurus-card{
+    border-radius:15px;
+}
+
+/* =====================================
+   MOBILE - HERO
+===================================== */
+
+.hero{
+    min-height:100vh;
+    height:auto;
+    padding:110px 20px 70px;
+    background-position:center;
+}
+
+.hero-content{
+    width:100%;
+    max-width:100%;
+}
+
+.hero-content h1{
+    font-size:36px;
+    line-height:1.3;
+    white-space:normal;
+}
+
+.hero-content h1 span{
+    display:block;
+}
+
+.hero-content p{
+    font-size:17px;
+    line-height:1.8;
+    white-space:normal;
+    margin-top:20px;
+    padding:0 5px;
+}
+
+/* =====================================
+   MOBILE - DASHBOARD
+===================================== */
+
+.dashboard{
+    padding:50px 0;
+}
+
+.info-bar{
+    grid-template-columns:1fr;
+    gap:20px;
+    padding:25px 20px;
+}
+
+.info-item{
+    padding:10px 0;
+}
+
+.info-item i{
+    font-size:28px;
+}
+
+.info-item h4{
+    font-size:16px;
+}
+
+.info-item h2{
+    font-size:28px;
+}
+
+/* Prayer Card */
+
+.prayer-card{
+    padding:25px 20px;
+}
+
+.prayer-card h3{
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.prayer-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.prayer-grid div{
+    padding:12px;
+    border-radius:12px;
+    background:#f8f8f8;
+}
+
+.prayer-grid span{
+    font-size:14px;
+}
+
+.prayer-grid strong{
+    font-size:20px;
+}
+
+/* =====================================
+   MOBILE - TENTANG KAMI
+===================================== */
+
+.about{
+    padding:60px 0;
+}
+
+.about .container{
+    width:100%;
+}
+
+.section-title{
+    margin-bottom:35px;
+}
+
+.section-title h5{
+    font-size:16px;
+}
+
+.section-title h2{
+    font-size:30px;
+    line-height:1.3;
+}
+
+.section-title p{
+    font-size:15px;
+    line-height:1.8;
+}
+
+.about-image{
+    margin:25px 0;
+}
+
+.about-image img{
+    height:250px;
+    border-radius:15px;
+}
+
+.about-content{
+    width:100%;
+}
+
+.item{
+    flex-direction:column;
+    gap:12px;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.item i{
+    margin:auto;
+}
+
+/* =====================================
+   MOBILE - SAMBUTAN PENGASUH
+===================================== */
+
+.pengasuh-home{
+    padding:60px 0;
+}
+
+.pengasuh-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+}
+
+.foto img{
+    max-width:260px;
+    margin:auto;
+}
+
+.isi{
+    text-align:center;
+}
+
+.isi h5{
+    font-size:16px;
+    letter-spacing:1px;
+}
+
+.isi h2{
+    font-size:30px;
+    line-height:1.3;
+}
+
+.jabatan{
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+.isi p{
+    text-align:justify;
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.isi .btn{
+    width:100%;
+    max-width:260px;
+}
+
+/* =====================================
+   MOBILE - STATISTIK
+===================================== */
+
+.counter{
+    padding:60px 0;
+}
+
+.counter-grid{
+    margin-top:35px;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.counter-box{
+    padding:25px 15px;
+}
+
+.counter-box i{
+    width:60px;
+    height:60px;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.counter-box h2{
+    font-size:28px;
+}
+
+.counter-box p{
+    font-size:15px;
+}
+
+}
+
+/* Jika ingin 1 kolom di HP kecil */
+
+@media (max-width:480px){
+
+.prayer-grid{
+    grid-template-columns:1fr;
+}
+
+.hero-content h1{
+    font-size:30px;
+}
+
+.hero-content p{
+    font-size:15px;
+}
+
+
+.counter-grid{
+    grid-template-columns:1fr;
+}
+
+.about-image img{
+    height:220px;
+}
+
+.isi h2{
+    font-size:26px;
+}
+
+.section-title h2{
+    font-size:26px;
+}
+
 }
