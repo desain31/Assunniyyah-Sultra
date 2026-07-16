@@ -278,7 +278,6 @@ nav ul li a.active {
 .hero-content h1 {
   font-size: 55px;
   line-height: 1.2;
-  white-space: nowrap;
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
 }
 
@@ -287,7 +286,6 @@ nav ul li a.active {
 }
 
 .hero-content p {
-  white-space: nowrap;
   font-size: 20px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
@@ -4488,25 +4486,23 @@ footer {
 }
 
 .hero-content h1{
-    font-size:26px;
+    font-size:20px;
+    line-height:1.4;
     font-weight:700;
-    line-height:1.25;
-    text-shadow:0 3px 10px rgba(0,0,0,.25);
+    text-align:center;
 }
 
 .hero-content h1 span{
     display:block;
     margin-top:8px;
-    font-size:26px;
-    line-height:1.25;
-    white-space:normal;
+    font-size:20px;
+    line-height:1.4;
 }
 
 .hero-content p{
-    margin:20px auto 0;
-    max-width:320px;
-    font-size:15px;
-    line-height:1.7;
+    font-size:14px;
+    max-width:300px;
+    margin:18px auto 0;
 }
 
 /* =====================================
