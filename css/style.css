@@ -4103,19 +4103,19 @@ footer {
    MOBILE - HERO
 ===================================== */
 
-  .hero{
-    min-height:100vh;
-    padding:90px 20px 40px;
-    display:flex;
-    align-items:flex-start;
-    justify-content:center;
-}
+  .hero {
+    min-height: 100vh;
+    padding: 90px 20px 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 
-.hero-content{
-    width:100%;
-    text-align:center;
-    margin-top:90px;
-}
+  .hero-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+  }
 
   .hero-title {
     display: flex;
@@ -4339,49 +4339,49 @@ footer {
    MOBILE - GURU
 ===================================== */
 
-.guru-home{
-    padding:50px 0;
-}
+  .guru-home {
+    padding: 50px 0;
+  }
 
-.guru-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:20px;
-    margin-top:30px;
-}
+  .guru-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 30px;
+  }
 
-.guru-card{
-    background:#fff;
-    border-radius:20px;
-    padding:20px;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
-}
+  .guru-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+  }
 
-.guru-card:hover{
-    transform:translateY(-5px);
-}
+  .guru-card:hover {
+    transform: translateY(-5px);
+  }
 
-.guru-card img{
-    width:170px;
-    height:170px;
-    object-fit:cover;
-    object-position:center;
-    margin:0 auto 15px;
-    display:block;
-    border-radius:50px;
-}
+  .guru-card img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto 15px;
+    display: block;
+    border-radius: 50px;
+  }
 
-.guru-card h3{
-    font-size:22px;
-    margin:0;
-    line-height:1.4;
-}
+  .guru-card h3 {
+    font-size: 22px;
+    margin: 0;
+    line-height: 1.4;
+  }
 
-.center{
-    margin-top:30px;
-}
+  .center {
+    margin-top: 30px;
+  }
 
   /* =====================================
    MOBILE - HADROH
@@ -4651,6 +4651,100 @@ footer {
     margin-top: 40px;
     padding: 18px 15px;
     font-size: 13px;
+  }
+
+  /* =====================================
+   MOBILE - PROFIL
+===================================== */
+
+  /* Sejarah */
+
+  .history {
+    padding: 50px 0;
+  }
+
+  .history-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    padding: 25px 20px;
+
+    margin-top: 30px;
+
+    border-radius: 18px;
+  }
+
+  .history-image img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  .history-content h3 {
+    font-size: 22px;
+    margin: 15px 0 10px;
+  }
+
+  .history-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+  }
+
+  /* Visi */
+
+  .visi {
+    padding: 50px 0;
+  }
+
+  .visi-box {
+    margin-top: 30px;
+    padding: 30px 20px;
+    border-radius: 18px;
+  }
+
+  .visi-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .visi-box blockquote {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+
+  /* Misi */
+
+  .misi {
+    padding: 50px 0;
+  }
+
+  .misi-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .misi-card {
+    padding: 25px 20px;
+    border-radius: 18px;
+  }
+
+  .misi-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+
+  .misi-card h3 {
+    font-size: 20px;
+  }
+
+  .misi-card p {
+    font-size: 15px;
+    line-height: 1.8;
   }
 }
 
