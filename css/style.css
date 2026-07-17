@@ -2130,10 +2130,10 @@ footer {
   margin-bottom: 20px;
 }
 
-.guru-card h3 {
+.guru-card h5 {
   color: #184d2d;
 
-  font-size: 24px;
+  font-size: 15px;
 
   margin-bottom: 10px;
 }
@@ -2208,6 +2208,141 @@ footer {
 
 .btn-guru:hover {
   background: #1b5e20;
+}
+
+/* ===================================================
+   DAFTAR GURU TUGAS
+=================================================== */
+
+.guru-tugas {
+  padding: 100px 0;
+  background: #f8fbf9;
+}
+
+.guru-tugas .section-title {
+  margin-bottom: 50px;
+}
+
+.guru-tugas .guru-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Kartu Guru Tugas */
+
+.guru-tugas .guru-card {
+  position: relative;
+
+  background: #ffffff;
+  padding: 25px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.guru-tugas .guru-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.13);
+}
+
+/* Foto Guru */
+
+.guru-tugas .guru-card img {
+  width: 160px;
+  height: 160px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin-bottom: 20px;
+
+  border: 5px solid #e8f5ed;
+}
+
+/* Badge */
+
+.guru-tugas .badge {
+  position: absolute;
+
+  top: 18px;
+  right: 18px;
+
+  padding: 6px 12px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  color: #ffffff;
+
+  background: #198754;
+
+  border-radius: 20px;
+}
+
+/* Nama */
+
+.guru-tugas .guru-card h5 {
+  margin-bottom: 8px;
+
+  font-size: 15px;
+
+  color: #1f2937;
+}
+
+/* Jabatan */
+
+.guru-tugas .jabatan {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: #198754;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Pendidikan */
+
+.guru-tugas .guru-card p {
+  margin-bottom: 20px;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+/* Tombol */
+
+.guru-tugas .btn-guru {
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  color: #ffffff;
+
+  background: #198754;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.guru-tugas .btn-guru:hover {
+  background: #146c43;
 }
 
 /* =====================================
@@ -5120,7 +5255,7 @@ footer {
     margin-bottom: 15px;
   }
 
-  .guru-card h3 {
+  .guru-card h5 {
     font-size: 14px;
     margin-bottom: 8px;
     line-height: 1.4;
@@ -5151,6 +5286,50 @@ footer {
     padding: 8px;
     font-size: 12px;
     border-radius: 12px;
+  }
+
+  .guru-tugas {
+    padding: 70px 20px;
+  }
+
+  .guru-tugas .section-title {
+    margin-bottom: 35px;
+  }
+
+  .guru-tugas .section-title h2 {
+    font-size: 25px;
+    line-height: 1.3;
+  }
+
+  .guru-tugas .section-title p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .guru-tugas .guru-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .guru-tugas .guru-card {
+    padding: 22px 18px;
+  }
+
+  .guru-tugas .guru-card img {
+    width: 135px;
+    height: 135px;
+  }
+
+  .guru-tugas .guru-card h5 {
+    font-size: 18px;
+  }
+
+  .guru-tugas .badge {
+    top: 15px;
+    right: 15px;
+
+    font-size: 10px;
+    padding: 5px 10px;
   }
   /* =====================================
    MOBILE - TENTANG HADROH
